@@ -1,0 +1,629 @@
+Comets 
+All Stars #FAFDEC,#383838,
+Hoops 
+Diamondbacks 
+Tractor Boys 
+Chaparrals 
+Forty-niners (49ers) 
+Rams 
+Lynx 
+Shooting Stars #FAFDEC,#383838,
+Deacons 
+Wizards 
+Pool #BFA070,
+Rainbow Warriors 
+Catamounts #2B2B2B,
+Hammerheads #FB607F,
+Durban 
+Mavericks 
+Cardinal #C41E3A,
+Railwaymen 
+Canucks 
+Bobcats #2B2B2B,
+Swans #F4F4E2,
+Reddies 
+Penguins 
+Royals #4169E1,
+Golden Knights #010208,#FFD700,#FFD700,
+Whalers #1E3442,#CC8E69,
+Legion 
+Blue Boys 
+BigHorns 
+Redbirds 
+Hawkeyes #2A52BE,
+Colts 
+Crusaders 
+Dolphins 
+U's 
+Hawks 
+Scarlet Knights #010208,#FF2400,
+Raiders 
+KingFish 
+Diamonds 
+Seagulls 
+Eagles 
+Crushers 
+The Bannsiders 
+Breckenridges 
+Great Lakers 
+Bees #FFB101,
+Pistons 
+Tiger-Cats #2B2B2B,#CB7119,
+Cardinals #C41E3A,
+Titans #D2B48C,
+Yeltz 
+Billy Goats 
+Glaziers 
+Cherries 
+Shots 
+Hardrockers 
+Bucks 
+Sun Devils #7D1C1C,#FFCC33,#FFB310,
+Red and Blues 
+Citizens 
+Nittany Lions #D2B48C,#C19A6B,
+Super Kings 
+Sea Dogs 
+Capitals 
+Jaspers #243225,
+Aces 
+Fosse 
+Giants 
+Bad Boys 
+Cowboys #663300,
+Wolves 
+Sooners 
+Fighting Hornets 
+Rebels 
+Sunrisers #FFCC33,#FFB310,
+Dodgers 
+Power 
+Saddlers #563424,
+Cumbrians 
+Eskimos 
+Stars #FAFDEC,#383838,
+Profs 
+Pirates 
+Posh 
+Miners 
+Nuggets 
+Bisons 
+Seminoles 
+Musketeers 
+Bluejays 
+Fast & the Furious 
+Nickname 
+Explorers 
+Prairie Wolves 
+All Whites 
+Maroons #800000,
+Billikens 
+Salukis 
+Stampeders 
+Crocodiles 
+Dolly Blues 
+Grecians 
+Irons #434B4D,#434B4D,
+Silkmen #FFF8DC,
+Gorillas 
+Sea Lions #C19A6B,
+Judges 
+Sycamores 
+Norse 
+FC 
+Monarchs 
+Knight Riders #010208,
+Avengers 
+Purple Knights #010208,
+Magpies 
+Panhandles 
+Cavaliers 
+Gladiators 
+Golden Panthers #FFD700,#FFD700,
+Rhinos 
+Coyotes 
+Iron #434B4D,#434B4D,
+Knitters 
+Fighting Scots 
+Firebirds #E25822,#B22222,
+Bears #8F6E4B,
+Ospreys 
+Chiefs 
+Amigos 
+Bruins 
+Yellows 
+Raptors 
+Threshers 
+Fightin’ Blue Hens 
+Socceroos 
+Shaymen 
+Marauders 
+Kangaroos #8B8589,
+Jeffersons 
+Flying Squirrels #78858B,
+Pioneers 
+Broncos 
+Blues 
+Blue Lightning 
+Patriots 
+Ichabods 
+Vipers 
+Wolfpack 
+Clippers 
+R's 
+Dust Devils #7D1C1C,#B9AB90,
+Black Bears #8F6E4B,
+76ers 
+Yellow Jackets 
+Browns 
+Stapletons 
+Stallions #C19A6B,
+Renegades 
+Fighting Cardinals #C41E3A,
+Redblacks 
+Green Wave 
+Roughriders 
+Red Imps 
+Majors 
+Hokies 
+Cyclones 
+Barracudas 
+Zebras 
+Yankees 
+Spurs 
+Lobos 
+Fleet 
+Steam Rollers #80461B,
+Ice Angels #FEFEFE,
+Blue Jackets 
+RedHawks 
+Gentlemen 
+Screaming Eagles #FFFDD0,
+Bandits 
+Llamas 
+Captains 
+Seals 
+Senators 
+Jets #010101,
+Fighting Crusaders 
+River Hawks 
+Millers 
+Shockers 
+Golden Bears #8F6E4B,#FFD700,#FFD700,
+Blue Tigers #CB7119,
+Teyn 
+Mustangs #D2B48C,
+Camels #C19A6B,
+Tykes 
+Governors 
+Ducks 
+OIlers #383838,
+Wolverines 
+Energy 
+Blazers #E64E3A,
+Barnstormers #7C0A02,#858F87,
+Thundering Herd 
+Saxons 
+Vandals 
+Kardex 
+Fighting Leathernecks #B27046,#8F5C3D,
+Texans 
+Gaels 
+Greyhounds 
+Chargers 
+Shrimpers #E4A4A6,
+Road Hogs 
+Violets #8F00FF,#8F00FF,
+Jayhawks 
+Big Red 
+Buccaneers 
+Kean Cougars 
+Golden Seals #FFD700,#FFD700,
+Savage Storm #858F87,
+Crush 
+Racers 
+Thunderbirds 
+Hornets 
+Continentals 
+Black Knights #010208,
+Thrashers #8C8475,#FF355E,#E7E6E0,
+Ironmen #434B4D,#434B4D,
+Yeomen 
+Loons 
+Wanderers 
+Foxes #CD5700,
+Schooners 
+Mocs 
+Dragons #CC4834,
+Bombers 
+Terras 
+Tritons 
+Rangers 
+Toon 
+The Blues 
+Islanders 
+Blackhawks 
+Hustlin’ Owls 
+Red Dragons #CC4834,
+Poppies 
+Longhorns 
+Triangles 
+Blue Devils #7D1C1C,
+Fighting Koalas 
+Hustlers 
+Hurricanes 
+Owls 
+City 
+Flyers 
+Golden Gophers #FFD700,#FFD700,
+Friars 
+Linnets 
+Magicians 
+Seasiders 
+Fighting Irish #8F00FF,
+Hatters 
+Spinners 
+Spiders #37363C,
+Blue Rocks 
+Zips 
+Mad Dogs 
+Riversiders 
+O's 
+Gauchos 
+Pacers 
+Killer Whales #1E3442,#CC8E69,
+Pharoahs 
+Highlanders 
+Ragin' Cajuns 
+Fighting Bees #FFB101,
+Blades 
+Flying Dutchmen 
+Cougars 
+Stormers #858F87,
+Leopards 
+Anteaters #80461B,
+Black Antelopes 
+Cobblers 
+Auggies 
+Pride 
+Terriers 
+Candy Stripes #9D2A17,#E4717A,
+Bulldogs 
+Mariners 
+Wolf Pack 
+Mud Hens #8B8589,#927F66,
+Minstermen 
+Donny 
+Alouettes 
+Seawolves 
+Glens 
+Heralds 
+Tics 
+Stormy Petrels #858F87,
+Bury 
+Magic 
+Mean Green 
+Super Hoops 
+Orediggers 
+Blue Raiders 
+Huskers 
+Mountain Lions #C19A6B,
+Battlin’ Bishops 
+Seahawks 
+Jam 
+All Blacks 
+Rockies 
+Daredevils #7D1C1C,
+Crimson Storm #DC143C,#858F87,
+Mad Ants 
+Shakers 
+Independents 
+Reds 
+Dockers 
+Cheetahs 
+United 
+Muleriders 
+Celtics 
+Midshipmen 
+Chairboys 
+Desparadoes 
+Indians 
+QPR 
+Lizards #4FA93F,
+Tar Heels #383838,
+Dancing Divas 
+Scouts 
+Crimson Giants #DC143C,
+Robins #ED872D,
+Hilltoppers 
+Great Danes 
+Railsplitters 
+Argonauts 
+Stags 
+Trojans 
+Avalanche 
+Elephants #8D847F,
+Red Men 
+Bridges 
+Mountaineers 
+Heat 
+Soul 
+Hammers #FB607F,
+Minutemen #EDCCB3,
+Boilermakers #383838,
+Bulldogs Hornets 
+49ers 
+Strawberry Jam #9B1500,#4F86F7,#D53032,#E4D96F,
+Paladins 
+Fusion 
+Knicks 
+Red Jackets 
+Aresenal 
+Crimson Hawks #DC143C,
+Glovers 
+Hatchetmen 
+Baggies 
+Knights #010208,
+Kingsmen 
+Jaguars 
+Cheifs 
+Devils #7D1C1C,
+Grasshoppers #664C28,#A09238,
+Swedes 
+Vikings 
+War Eagles 
+Flames #E25822,#E25822,
+Warriors 
+Ash Trees #8C8475,#228B22,#E7E6E0,
+Canadiens 
+Team #80461B,
+Skywalkers #87CEEB,
+Blackflies 
+Buffaloes #F0DC82,#F0DC82,#64AC58,#EDC482,
+Heed 
+Imps 
+Bantams 
+Golden Flashes #8C8475,#FFD700,#E7E6E0,#FFD700,
+Fever 
+The Lancers 
+Queens 
+Kelleys 
+Bulls 
+Tartans #383838,#D2B48C,
+Tornadoes 
+Crimson #DC143C,
+Red Wings 
+Daggers 
+Bucaneers 
+Defenders 
+Blue Jays 
+Vulcans 
+Aggies 
+Predators 
+Bald Eagles 
+Bethel Royals #4169E1,
+Red Raiders 
+Gunners 
+Huskies 
+Volunteers 
+Queens of the Court 
+Salop 
+Grizzlies 
+Chippewas 
+Cottagers 
+Crimson Tide #DC143C,
+Gills 
+Stripes 
+Vics 
+Smoggies #91A3B0,#91A3B0,
+Brewers 
+SkyForce #87CEEB,
+Whitecaps 
+Golden Eagles #FFD700,#FFD700,
+Fighting Illini 
+Nets 
+Buckeyes #2A52BE,
+Bullets 
+Gas 
+Lugnuts #EDCCB3,
+Skyhawks #87CEEB,
+Black Cats #2B2B2B,
+Horned Frogs #9AB78B,
+Nor’easters 
+Pink Dragons #00608B,#CC4834,
+Ragin’ Cajuns 
+Demons #7D1C1C,
+Force 
+Sharks 
+Battlers 
+Foresters #228B22,
+Preachers 
+Blue Demons #7D1C1C,
+Jumbos 
+Addicks 
+Shrimps #E4A4A6,
+Moniker 
+White Sharks 
+Nailers 
+Phoenix 
+Scarlet Raptors #FF2400,
+All Reds 
+Redskins 
+Golden Lions #FFD700,#FFD700,#C19A6B,
+Purple Cobras 
+Filberts 
+Pompey 
+Rattlers 
+Polar Bears #8F6E4B,
+Pipers 
+Clarets #7F1734,
+Jazz 
+Rampage 
+Lightning 
+Dale #CC8E69,
+Ravens #252629,
+Saints 
+Biscuitmen #E8D2BB,
+Cornhuskers #FBEC5D,
+Tigers #CB7119,
+Bills 
+Manatees 
+Lancers 
+Lumberjacks #635147,
+Artichokes 
+Braves 
+Lakers 
+Demon Deacons #7D1C1C,
+Tidal Wave 
+Orange 
+Sugar Bears #FEFEFE,#B98E63,#8F6E4B,
+Gamecocks 
+Lopers 
+Posse 
+Blugolds #FFD700,#FFD700,
+Sandgrounders #C2B280,#EDC9AF,
+Mules 
+She Devils #7D1C1C,
+Carp 
+Cobbers 
+Mushrooms #AC9379,
+Timberwolves 
+Pools #BFA070,
+Nanooks 
+Stampede 
+Quakers 
+Hoosiers 
+Wave 
+Rockets #BA3B3D ,
+Pink Pandas #00608B,
+Spireites 
+Golden Hurricane #FFD700,#FFD700,
+Redhawks 
+Wild Kittens 
+Falcons 
+Red Wolves 
+Red Devils #7D1C1C,
+Gulls 
+Canaries 
+Volcanoes 
+Yanks 
+Bengals 
+Wonder Boys 
+Gators 
+Sabres 
+Razorbacks 
+Stute 
+Oles 
+Red Storm #858F87,
+Dazzle 
+Colonels 
+Black Stars #FAFDEC,#383838,
+Olympians 
+Purple Aces 
+Hustlin’ Quakers 
+Statesmen 
+Cats #2B2B2B,
+Thunder 
+Tricky Trees #228B22,
+Harriers 
+Roadrunners 
+Roar 
+Generals 
+Nordiques 
+Squirrels #78858B,
+ThunderWolves 
+Miracles 
+Red Foxes #CD5700,
+Boro 
+Spitfires #E25822,#B22222,
+Crows #152324,
+Tangerines #D2B48C,#F28500,
+Marlins 
+Lilywhites #ECE6C8,
+Utes 
+Skunks 
+Latics 
+Pilgrims 
+Terrapins 
+Warhawks 
+Barons 
+Brigade 
+Sagehens #9FC3A9,#9C8F60 ,
+Packers 
+Dons 
+Scorpions 
+Retrievers 
+Lambs #F8F7F4,
+Badgers #808080,
+Jackrabbits 
+Golden Grizzlies #FFD700,#FFD700,
+Toffees #8E593C,
+Diplomats 
+Lords 
+Trotters 
+Sports #441A1A,
+Pros 
+Tarzans #383838,
+Aztecs 
+Americans 
+Wildcats #2B2B2B,
+Monkey hangers 
+Steelers #4682B4,#686F82,
+Golden Bulls #FFD700,#FFD700,
+North Stars #FAFDEC,#383838,
+Westerners 
+Groove 
+Commodores 
+Blue Thunder 
+Poets 
+Blue Rebels 
+Matadors 
+Wild 
+Griffins 
+Rivermen 
+Tynesiders 
+Intimidators 
+Glory 
+Silverswords #C0C0C0,#C0C0C0,
+Beavers #964B00,
+Bonnies 
+Cod Army 
+Kings 
+Hoyas 
+Mountain Cats #2B2B2B,
+Maple Leafs #CB410B,#CB410B,#FFB963,#008000,
+Blitz 
+Potters 
+Peacocks #1D618C,
+Baskethounds 
+Golden Tornadoes #FFD700,#FFD700,
+Gold Miners #FFD700,#FFD700,
+Shrews 
+Sky Blues #87CEEB,
+Valiants 
+Lions #C19A6B,
+Villans 
+Chanticleers 
+Tribe 
+Victory 
+Flash #8C8475,#E7E6E0,
+Privateers 
+Spartans #D2B48C,
+Rush 
+Suns #FFCC33,#FFB310,
+Banana Slugs #FFE135,
+Pygmies 
+Cadets 
+Big Blues 
+Bull Riders 
+Boll Weevils 
+Whites 
+Bearcats #2B2B2B,#8F6E4B,
+Marines 
+Spirit 
+Panthers 
+Celts 
+Big Green 
+Naturals 
+Dukes 
+Little Giants 
