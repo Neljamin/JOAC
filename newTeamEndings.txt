@@ -1,115 +1,103 @@
-Comets 
-All Stars #FAFDEC #383838 
-Hoops 
-Diamondbacks 
-Tractor Boys 
-Chaparrals 
-Forty-niners (49ers) 
-Rams 
-Lynx 
-Shooting Stars #FAFDEC #383838 
-Deacons 
-Wizards 
+Comets #924F02
+All Stars #FAFDEC #F2E207 
+Hoops #1D5A11 #EA1406 
+Diamondbacks #C0E8E6 #E9EF9F
+Tractor Boys #61310A #056610
+Chaparrals #266928 
+Rams #0F1557 #E6C90A
+Lynx #B81E66 #000000
+Shooting Stars #FAFDEC #F2E207 
+Deacons #1A3E0F
+Wizards #42142A #848362
 Pool #BFA070 
-Rainbow Warriors 
+Rainbow Warriors #9F00FF #0000FF #1CAC78 #FBD50A #D34810 #C6004B
 Catamounts #2B2B2B 
 Hammerheads #FB607F 
-Durban 
-Mavericks 
-Cardinal #C41E3A 
-Railwaymen 
-Canucks 
-Bobcats #2B2B2B 
+Mavericks #1E20B3 #E63A0F
+Cardinals #C41E3A 
+Railwaymen #19559F #040C16
+Canucks #043777
+Bobcats #2B2B2B #D91221 
 Swans #F4F4E2 
-Reddies 
-Penguins 
-Royals #4169E1 
+Reddies #E62D28
+Penguins #2BDECA #010A09
+Royals #4169E1 #D5C915
 Golden Knights #010208 #FFD700 #FFD700 
 Whalers #1E3442 #CC8E69 
-Legion 
-Blue Boys 
-BigHorns 
-Redbirds 
+Legion #EAE88B #EDA896
+Blue Boys #8BA2EA #1239B5 #001A6B
+BigHorns #4E2818 #F54900
+Redbirds #A41A19 #E02F00
 Hawkeyes #2A52BE 
-Colts 
-Crusaders 
-Dolphins 
-U's 
-Hawks 
-Scarlet Knights #010208 #FF2400 
-Raiders 
-KingFish 
-Diamonds 
-Seagulls 
-Eagles 
-Crushers 
-The Bannsiders 
-Breckenridges 
-Great Lakers 
+Colts #1B1890 #E8EB0A
+Crusaders #6B6B6B #CF1717
+Dolphins #17CFC1
+Hawks #04100F
+Scarlet Knights #010208 #FF2400 #C021AA
+Raiders #081615 #910D0D
+KingFish #2E6313 #008BBD
+Diamonds #BAEDE7
+Seagulls #EEF7F6
+Eagles #CEBA22 #452D0D
+Crushers #18070A
+Bannsiders #437425 
+Great Lakers #1E2976
 Bees #FFB101 
-Pistons 
+Pistons #405559
 Tiger-Cats #2B2B2B #CB7119 
 Cardinals #C41E3A 
-Titans #D2B48C 
-Yeltz 
-Billy Goats 
-Glaziers 
-Cherries 
-Shots 
-Hardrockers 
-Bucks 
+Titans #1026B7 
+Yeltz #D4D30C 
+Glaziers #18BCC3
+Cherries #C40000
+Hardrockers #010404 #631C45
+Bucks #7B5114
 Sun Devils #7D1C1C #FFCC33 #FFB310 
-Red and Blues 
-Citizens 
+Citizens #3D53BD
 Nittany Lions #D2B48C #C19A6B 
-Super Kings 
-Sea Dogs 
-Capitals 
+Super Kings #E9E10C #E9A30C
+Sea Dogs #3353F0 #309CB0
+Capitals #E51C10 #1210E5 #1AE510
 Jaspers #243225 
-Aces 
-Fosse 
-Giants 
-Bad Boys 
+Aces #F20718 #000000
+Fosse #E449BC
+Giants #1C1244 #740213
+Bad Boys #00750C #A12B48
 Cowboys #663300 
-Wolves 
-Sooners 
-Fighting Hornets 
-Rebels 
+Wolves #C95608
+Sooners #8A230F
+Fighting Hornets #C6AC0C #242005
+Rebels #160704 #7B1E61 #E41C07
 Sunrisers #FFCC33 #FFB310 
-Dodgers 
-Power 
+Dodgers #212088 #E10511
+Power #E6DA05
 Saddlers #563424 
-Cumbrians 
-Eskimos 
+Cumbrians #277C35
+Eskimos #51E6DD #DBEBEA
 Stars #FAFDEC #383838 
-Profs 
-Pirates 
-Posh 
-Miners 
-Nuggets 
-Bisons 
-Seminoles 
-Musketeers 
-Bluejays 
-Fast & the Furious 
-Nickname 
-Explorers 
-Prairie Wolves 
-All Whites 
+Pirates #060504
+Miners #0C0604 #433A37
+Nuggets #D8C20E #81491D
+Bisons #5E391D #0E0A07
+Seminoles #ECEAE9
+Musketeers #246020 #AD2A1F
+Bluejays #263B92
+Explorers #112B97 #194C15
+Prairie Wolves #AF201D
+All Whites #F8F7F7
 Maroons #800000 
-Billikens 
-Salukis 
-Stampeders 
-Crocodiles 
-Dolly Blues 
-Grecians 
+Billikens #3140AA
+Salukis #BE7813
+Stampeders #EFF221 #F02114
+Crocodiles #2bbc4e
+Dolly Blues #57A0D1 
 Irons #434B4D #434B4D 
 Silkmen #FFF8DC 
-Gorillas 
+Gorillas #1C211C
 Sea Lions #C19A6B 
-Judges 
-Sycamores 
-Norse 
+Judges #000000 #142685
+Sycamores #296812
+Norse #F1760E
 FC 
 Monarchs 
 Knight Riders #010208 
