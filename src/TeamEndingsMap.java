@@ -10,8 +10,18 @@ import java.util.Vector;
 
 public class TeamEndingsMap {
 	
+	
+	
 	ColourTable colours = new ColourTable("colours.txt");
 	static HashMap<String, Vector<String>> teamEndingsMap = new HashMap<String, Vector<String>>();
+	
+	public TeamEndingsMap(String filename){
+		getColoursFor(filename);
+	}
+	
+	public HashMap<String, Vector<String>> getTeamEndingMap(){
+		return teamEndingsMap;
+	}
 	
 	public void getColoursFor(String filename){
 		
@@ -38,7 +48,34 @@ public class TeamEndingsMap {
 		
 		
 	}
-	
+	/*For reading in from file after we enter the RGBs manually*/
+//	public void readTeamEndings(String filename){
+//		try {
+//			File file = new File("data\\"+filename);
+//			FileReader fileReader = new FileReader(file);
+//			BufferedReader bufferedReader = new BufferedReader(fileReader);
+//			String line;
+//			while ((line = bufferedReader.readLine()) != null) {				//read in each line of the file
+//				String[] parts = line.split(" ");
+//				Vector<String> RGBs = new Vector<String>();
+//				String team_ending = "";
+//				for(int i=0;i<parts.length;i++){
+//					if(parts[i].startsWith("#")){
+//						RGBs.add(parts[i].trim());
+//					}
+//					else{
+//						team_ending = team_ending + parts[i]+" ";
+//					}
+//				}
+//				teamEndingsMap.put(team_ending.trim(),RGBs);
+//				
+//			}
+//			fileReader.close();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//	}
+//	
 	public void print_to_file(HashMap<String, Vector<String>> hmap, String outputFile){
 		try{
 			File outfile = new File("output\\"+outputFile);
@@ -51,7 +88,7 @@ public class TeamEndingsMap {
 			for (HashMap.Entry<String, Vector<String>> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
 			    bw.write(entry.getKey()+" ");		//write the key an the value to the specified file
 			    for(String rgb : entry.getValue()){
-			    	bw.write(rgb+",");
+			    	bw.write(rgb+" ");
 			    }
 				bw.newLine();
 			}
@@ -61,4 +98,9 @@ public class TeamEndingsMap {
 		}
 	}
 
+	public static void main(String[] args) {
+		TeamEndingsMap t = new TeamEndingsMap("newTeamEndings.txt");
+		t.print_to_file(teamEndingsMap,"ReadTeamEndings.txt");
+		System.out.println(t.getTeamEndingMap());
+	}
 }
