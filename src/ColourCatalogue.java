@@ -21,17 +21,30 @@ import java.util.HashMap;
 import java.util.Vector;
 
 
+
 public class ColourCatalogue {
 	
-	private static HashMap<String, Vector> readymade_bigrams = new HashMap<String, Vector>();
-	private static HashMap<String, Vector> readymade_unigrams = new HashMap<String, Vector>();
-	private static HashMap<String, Vector> readymade_plural_bigrams = new HashMap<String, Vector>();
+	private static HashMap<String, Vector<String>> readymade_bigrams = new HashMap<String, Vector<String>>();
+	private static HashMap<String, Vector<String>> readymade_unigrams = new HashMap<String, Vector<String>>();
+	private static HashMap<String, Vector<String>> readymade_plural_bigrams = new HashMap<String, Vector<String>>();
 	private ColourTable colour_table;
 
 	public ColourCatalogue(ColourTable table){
 		colour_table = table;
 		get_colour_bigrams("bigrams.txt");
 		get_unigrams("unigrams.txt");
+	}
+	
+	public HashMap<String, Vector<String>> getreadymadeBigrams(){
+		return readymade_bigrams;
+	}
+	
+	public HashMap<String, Vector<String>> getreadymadeUnigrams(){
+		return readymade_unigrams;
+	}
+	
+	public HashMap<String, Vector<String>> getreadymadePluralBigrams(){
+		return readymade_plural_bigrams;
 	}
 	
 	private void get_colour_bigrams(String filename){
@@ -82,7 +95,7 @@ public class ColourCatalogue {
 		}
 	}
 	
-	private void print_to_file(HashMap<String, Vector> hmap, String outputFile){
+	private void print_to_file(HashMap<String, Vector<String>> hmap, String outputFile){
 		try{
 			File outfile = new File("output\\"+outputFile);
 			if (!outfile.exists()) {
@@ -91,7 +104,7 @@ public class ColourCatalogue {
 			FileWriter fw = new FileWriter(outfile.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
 			
-			for (HashMap.Entry<String, Vector> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
+			for (HashMap.Entry<String, Vector<String>> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
 			    bw.write(entry.getKey() + " = " + entry.getValue());		//write the key an the value to the specified file
 				bw.newLine();
 			}
@@ -148,11 +161,27 @@ public class ColourCatalogue {
 		}
 	}
 	
-	private String[] search(HashMap<String, Vector> map, String rgb_code){
-		long time = System.currentTimeMillis();
+	public Vector<Vector<String>> getNearestColours(HashMap<String, Vector<String>> map, String my_rgb,double range){
+		Vector<Vector<String>> nearest_colours = new Vector<Vector<String>>();
+		for (HashMap.Entry<String, Vector<String>> entry : map.entrySet()) {		//go through every entry in the hash table			
+			for(String rgb : entry.getValue()){
+					double distance = colour_table.get_distance(rgb, my_rgb);	//get the distance from each code
+					if(distance < range){				
+						Vector<String> nearest_colour = new Vector<String>();
+						nearest_colour.add(entry.getKey());
+						nearest_colour.add(rgb);
+						nearest_colours.add(nearest_colour);
+					}
+				
+			}
+		}
+		return nearest_colours;
+	}
+	
+	private String[] search(HashMap<String, Vector<String>> map, String rgb_code){
 		String[] nearest_colour = new String[2];
 		double nearest = 1.0;												//set nearest codes to max distance
-		for (HashMap.Entry<String, Vector> entry : map.entrySet()) {		//go through every entry in the hash table			
+		for (HashMap.Entry<String, Vector<String>> entry : map.entrySet()) {		//go through every entry in the hash table			
 			String[] values = new String[entry.getValue().size()];
 			entry.getValue().toArray(values);
 			if(values.length > 10){
@@ -186,5 +215,13 @@ public class ColourCatalogue {
 		print_to_file(readymade_plural_bigrams, "readymade_plural_bigrams.txt");
 		print_to_file(readymade_unigrams, "readymade_unigrams.txt");
 	}
+	
+	public static void main(String[] args) {
+		ColourTable c = new ColourTable("colours.txt");
+		ColourCatalogue cc = new ColourCatalogue(c);
+		System.out.println(cc.getNearestColours(readymade_plural_bigrams,"#e69064" ,0.03));
+	}
+	
+	
 				
 }
