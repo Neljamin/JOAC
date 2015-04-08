@@ -24,7 +24,7 @@ import javax.imageio.ImageIO;
 public class Pattern {
 	
 	private static final String PATTERNS_DIRECTORY = "patterns";  // path to folder containing the patterns 
-	private static final int PATTERN_NUMBER = 0; //TODO temporary constant used for testing
+	private static final int PATTERN_NUMBER = 2; //TODO temporary constant used for testing
 	/* if there are multiple folders in the pattern folder set this constant to what number folder 
 	 * you want to test. What ever sequence the folders in the directory are in will correspond to what 
 	 * number to use.
@@ -118,11 +118,10 @@ public class Pattern {
     	//needs to be the same number of colours as there is layers
     	//these colours will be applied to the layers in the order they are in in the folder
     	int[][] colours = {
-    		{255, 255, 255},
-    		{0, 0, 0},
-    		{255, 255, 255},
+    		{225, 225, 225},
+    		{50, 255, 100},
     		{0, 0, 255},
-    		{255, 0, 0}
+    		{0, 255, 0}
     	};
     	
     	int counter = 0;
@@ -134,10 +133,10 @@ public class Pattern {
     		//change the colour of every pixel in the image but retain the transParency
     		for(int x = 0; x < width; x++){
     			for(int y = 0; y < height; y++){
-    				int[] pixels = raster.getPixel(x, y, (int[]) null); 
+    				int[] pixels = raster.getPixel(x, y, (int[]) null);
     				pixels[0] = colours[counter][0];
     				pixels[1] = colours[counter][1];
-    				pixels[1] = colours[counter][1];
+    				pixels[2] = colours[counter][2];
     				raster.setPixel(x, y, pixels);
     			}
     		}
