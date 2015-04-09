@@ -15,7 +15,7 @@ public class PlaceInventory {
 	
 	private void loadPlaces(){
 		try {
-			FileReader placeFile = new FileReader("placenames.txt");
+			FileReader placeFile = new FileReader("data\\placenames.txt");
 			@SuppressWarnings("resource")
 			Scanner in = new Scanner(placeFile);
 			while(in.hasNextLine()){
