@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Vector;
-
+import java.util.*;
 
 public class TeamNicknameMap {
 	
@@ -13,11 +13,13 @@ public class TeamNicknameMap {
 	TeamEndingsMap team_endings_map = new TeamEndingsMap("team_endings.txt");
 	static HashMap<String, Vector<String>> team_nickname_map = new HashMap<String, Vector<String>>();
 	
-	
+	public TeamNicknameMap(){
+		generateNicknames();
+	}
 	
 	public void generateNicknames(){
 		HashMap<String, Vector<String>> plural_readymades = colour_catalogue.getreadymadePluralBigrams();
-		for (HashMap.Entry<String, Vector<String>> entry : team_endings_map.getTeamEndingMap().entrySet()){
+		for (Map.Entry<String, Vector<String>> entry : team_endings_map.getTeamEndingMap().entrySet()){
 			Vector<String> nicknames = new Vector<String>(); 
 			for(String ending_colour : entry.getValue()){
 				Vector<Vector<String>> readymades = colour_catalogue.getNearestColours(plural_readymades, ending_colour, 0.03);
@@ -39,7 +41,7 @@ public class TeamNicknameMap {
 			FileWriter fw = new FileWriter(outfile.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
 			
-			for (HashMap.Entry<String, Vector<String>> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
+			for (Map.Entry<String, Vector<String>> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
 			    bw.write(entry.getKey()+" = [");		//write the key an the value to the specified file
 			    for(String rgb : entry.getValue()){
 			    	bw.write(rgb+",");
@@ -53,9 +55,12 @@ public class TeamNicknameMap {
 		}
 	}
 	
+	public void printMapToFile(){
+		print_to_file(team_nickname_map,"teamNicknamesMap.txt");
+	}
+	
 	public static void main(String[] args) {
 		TeamNicknameMap tn = new TeamNicknameMap();
-		tn.generateNicknames();
 		tn.print_to_file(team_nickname_map,"teamNicknameMap.txt" );
 			
 	}

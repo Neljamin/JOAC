@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.util.*;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
@@ -33,7 +34,7 @@ public class TeamEndingsMap {
 			while ((line = bufferedReader.readLine()) != null) {				//read in each line of the file
 				String team_ending = line.toLowerCase();
 				Vector<String> RGBs = new Vector<String>();
-				for(HashMap.Entry<String, String> entry : colours.getTable().entrySet()){
+				for(Map.Entry<String, String> entry : colours.getTable().entrySet()){
 					String[] sterotype = entry.getKey().split("_");
 					if(team_ending.contains(sterotype[0].toLowerCase())){
 						RGBs.add(entry.getValue());
@@ -85,7 +86,7 @@ public class TeamEndingsMap {
 			FileWriter fw = new FileWriter(outfile.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
 			
-			for (HashMap.Entry<String, Vector<String>> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
+			for (Map.Entry<String, Vector<String>> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
 			    bw.write(entry.getKey()+" ");		//write the key an the value to the specified file
 			    for(String rgb : entry.getValue()){
 			    	bw.write(rgb+" ");
@@ -96,6 +97,10 @@ public class TeamEndingsMap {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public void printMapToFile(){
+		print_to_file(teamEndingsMap,"teamEndingsMap.txt");
 	}
 
 	public static void main(String[] args) {

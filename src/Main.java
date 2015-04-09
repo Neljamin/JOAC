@@ -1,15 +1,15 @@
-import java.io.IOException;
-import twitter4j.TwitterException;
-
 
 public class Main {
-	
-	public static void main(String[] args) throws TwitterException, IOException {
-		ColourTable colout_table = new ColourTable("colours.txt");
-		ColourCatalogue colour_catalogue = new ColourCatalogue(colout_table);
-		UrlMap url_map = new UrlMap(colour_catalogue);
-		Tweeter tweeter = new Tweeter(url_map);
-		tweeter.tweet_colour("#154622");
+
+	public static void main(String[] args) {
+		ColourTable colour_table = new ColourTable("colours.txt");
+		ColourCatalogue colour_catalogue = new ColourCatalogue(colour_table);
+		TeamEndingsMap team_endings_map = new TeamEndingsMap("team_endings.txt");
+		TeamNicknameMap team_nickname_map = new TeamNicknameMap();
+		colour_catalogue.print_colours_to_files();
+		team_endings_map.printMapToFile();
+		team_nickname_map.printMapToFile();
+
 	}
 
 }

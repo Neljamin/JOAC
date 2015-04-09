@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Vector;
-
+import java.util.Map;
 
 
 public class ColourCatalogue {
@@ -104,7 +104,7 @@ public class ColourCatalogue {
 			FileWriter fw = new FileWriter(outfile.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
 			
-			for (HashMap.Entry<String, Vector<String>> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
+			for (Map.Entry<String, Vector<String>> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
 			    bw.write(entry.getKey() + " = " + entry.getValue());		//write the key an the value to the specified file
 				bw.newLine();
 			}
@@ -163,7 +163,7 @@ public class ColourCatalogue {
 	
 	public Vector<Vector<String>> getNearestColours(HashMap<String, Vector<String>> map, String my_rgb,double range){
 		Vector<Vector<String>> nearest_colours = new Vector<Vector<String>>();
-		for (HashMap.Entry<String, Vector<String>> entry : map.entrySet()) {		//go through every entry in the hash table			
+		for (Map.Entry<String, Vector<String>> entry : map.entrySet()) {		//go through every entry in the hash table			
 			for(String rgb : entry.getValue()){
 					double distance = colour_table.get_distance(rgb, my_rgb);	//get the distance from each code
 					if(distance < range){				
@@ -181,7 +181,7 @@ public class ColourCatalogue {
 	private String[] search(HashMap<String, Vector<String>> map, String rgb_code){
 		String[] nearest_colour = new String[2];
 		double nearest = 1.0;												//set nearest codes to max distance
-		for (HashMap.Entry<String, Vector<String>> entry : map.entrySet()) {		//go through every entry in the hash table			
+		for (Map.Entry<String, Vector<String>> entry : map.entrySet()) {		//go through every entry in the hash table			
 			String[] values = new String[entry.getValue().size()];
 			entry.getValue().toArray(values);
 			if(values.length > 10){
@@ -219,7 +219,7 @@ public class ColourCatalogue {
 	public static void main(String[] args) {
 		ColourTable c = new ColourTable("colours.txt");
 		ColourCatalogue cc = new ColourCatalogue(c);
-		System.out.println(cc.getNearestColours(readymade_plural_bigrams,"#e69064" ,0.03));
+		cc.print_colours_to_files();
 	}
 	
 	
