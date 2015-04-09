@@ -18,7 +18,6 @@ public class PlaceInventory {
 			FileReader placeFile = new FileReader("placenames.txt");
 			@SuppressWarnings("resource")
 			Scanner in = new Scanner(placeFile);
-//			Iterator<String> place_it = places.iterator();
 			while(in.hasNextLine()){
 				places.add(in.nextLine());
 			}
@@ -35,6 +34,11 @@ public class PlaceInventory {
 	
 	public Vector<String> getPlaces(){
 		return places;
+	}
+	
+	public String getRandomPlace(){
+		int rand = (int) (Math.random() * 385);
+		return places.elementAt(rand);
 	}
 	
 	public static void main(String args[]){
