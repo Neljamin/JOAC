@@ -13,8 +13,8 @@ public class TeamEndingsMap {
 	
 	
 	
-	ColourTable colours = new ColourTable("colours.txt");
-	static HashMap<String, Vector<String>> teamEndingsMap = new HashMap<String, Vector<String>>();
+	private ColourTable colours = new ColourTable("colours.txt");
+	private static HashMap<String, Vector<String>> teamEndingsMap = new HashMap<String, Vector<String>>();
 	
 	public TeamEndingsMap(String filename){
 		getColoursFor(filename);
