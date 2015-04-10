@@ -8,16 +8,16 @@ import java.util.*;
 
 public class TeamNicknameMap {
 	
-	ColourTable colour_table = new ColourTable("colours.txt");
-	ColourCatalogue colour_catalogue = new ColourCatalogue(colour_table);
-	TeamEndingsMap team_endings_map = new TeamEndingsMap("team_endings.txt");
+	private ColourTable colour_table = new ColourTable("colours.txt");
+	private ColourCatalogue colour_catalogue = new ColourCatalogue(colour_table);
+	private TeamEndingsMap team_endings_map = new TeamEndingsMap("team_endings.txt");
 	static HashMap<String, Vector<String>> team_nickname_map = new HashMap<String, Vector<String>>();
 	
 	public TeamNicknameMap(){
 		generateNicknames();
 	}
 	
-	public void generateNicknames(){
+	private void generateNicknames(){
 		HashMap<String, Vector<String>> plural_readymades = colour_catalogue.getreadymadePluralBigrams();
 		for (Map.Entry<String, Vector<String>> entry : team_endings_map.getTeamEndingMap().entrySet()){
 			Vector<String> nicknames = new Vector<String>(); 
@@ -32,7 +32,7 @@ public class TeamNicknameMap {
 
 	}
 	
-	public void print_to_file(HashMap<String, Vector<String>> hmap, String outputFile){
+	private void print_to_file(HashMap<String, Vector<String>> hmap, String outputFile){
 		try{
 			File outfile = new File("output\\"+outputFile);
 			if (!outfile.exists()) {
@@ -57,6 +57,10 @@ public class TeamNicknameMap {
 	
 	public void printMapToFile(){
 		print_to_file(team_nickname_map,"teamNicknamesMap.txt");
+	}
+	
+	public HashMap<String, Vector<String>> getNicknames(){
+		return team_nickname_map;
 	}
 	
 	public static void main(String[] args) {
