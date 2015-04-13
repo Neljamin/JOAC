@@ -8,7 +8,7 @@
  *   					 folder(pattern_n) --> file(layer_0)
  *   												.
  *   												.
- *   											file(layer_0)		
+ *   											file(layer_n)		
  */
 
 import java.awt.image.BufferedImage;
@@ -24,18 +24,19 @@ import javax.imageio.ImageIO;
 public class Pattern {
 	
 	private static final String PATTERNS_DIRECTORY = "patterns";  // path to folder containing the patterns 
-	private static final int PATTERN_NUMBER = 2; //TODO temporary constant used for testing
+	private static final int PATTERN_NUMBER = 0; //TODO temporary constant used for testing
 	/* if there are multiple folders in the pattern folder set this constant to what number folder 
 	 * you want to test. What ever sequence the folders in the directory are in will correspond to what 
 	 * number to use.
 	 * */
 	
-	
+	private ColourShader shader;
 	private Vector<BufferedImage> images;  // contains all image files that makes up the pattern
 	private int width;		// this will be the width of the bottom layer i.e. the canvas
 	private int height;		// this will be the height of the bottom layer i.e. the canvas
 	
 	public Pattern(String colour) {
+		shader = new ColourShader();
 		String patternDir = randomPattern();  	//selects a random pattern folder
 		System.out.println("Selected patternDir: "+patternDir);
 		Vector<String> files = getFiles(patternDir);	// gets the file names from the pattern directory
@@ -114,15 +115,7 @@ public class Pattern {
     // this method colours each image layer to a shade of the given colour
     private void colurImages(String colour) {
     	
-    	//TODO
-    	//needs to be the same number of colours as there is layers
-    	//these colours will be applied to the layers in the order they are in in the folder
-    	int[][] colours = {
-    		{225, 225, 225},
-    		{50, 255, 100},
-    		{0, 0, 255},
-    		{0, 255, 0}
-    	};
+    	int[][] colours = shader.getColourBands(colour, images.size());
     	
     	int counter = 0;
     	

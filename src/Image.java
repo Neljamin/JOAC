@@ -37,8 +37,8 @@ public class Image {
     //MAIN METHOD
     
     public static void main(String[] args) throws IOException {
-    	Image img  = new Image("");
-    	ImageIO.write(img.getImage(), "png", new File("Test.png"));// this will create an image file
+    	Image img  = new Image("FF3300");
+    	ImageIO.write(img.getImage(), "png", new File("pattern_0_.png"));// this will create an image file
     }	
     
 }

@@ -1,0 +1,11 @@
+Twitter e-mail: owentdoyler@gmail.com
+password: comp30050
+
+Owner: everyTeamBot
+Owner ID: 3094507821
+
+Consumer Key (API Key):	Ml6x6F1EbqUH0YiCtQiZyCs9y
+Consumer Secret (API Secret): CbET7Emw5gdNT70nuUpB5Zezp623Y4zgNhu4bitVNCwqP2PJYb
+
+Access Token: 3094507821-2A8FbZ85pDKNCMsvqnfMN13Re47q2QHnggqimJu
+Access Token Secret: YlE1SOZc6DW6BgqQcb0KJkNHj05V8wVmbQsMIAVuopJMe
