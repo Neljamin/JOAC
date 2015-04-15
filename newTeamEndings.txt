@@ -295,86 +295,83 @@ Mountain Lions #C19A6B
 Battlin’ Bishops #D60420
 Seahawks #6C7DA3 #91959E
 Jam #F720CC #C4001A #ED0928 #88008F
-All Blacks 
-Rockies 
+All Blacks #000000
+Rockies #7D8C8C #C3C9C9
 Daredevils #7D1C1C 
 Crimson Storm #DC143C #858F87 
-Mad Ants 
-Shakers 
-Independents 
-Reds 
-Dockers 
-Cheetahs 
-United 
-Muleriders 
-Celtics 
-Midshipmen 
-Chairboys 
-Desparadoes 
-Indians 
-QPR 
+Mad Ants #85031A #B80D2C
+Shakers #18F1F5
+Independents #FFFFFF
+Reds #ED1329 #C71E2F #96111E
+Dockers #6292A1
+Cheetahs #E3F522 #DEF205
+United #EBEBEB
+Muleriders #BBBCBF
+Celtics #1EB33A #00E029 #34EB55
+Midshipmen #34AEEB #6DA4BF
+Chairboys #BF886D
+Desparadoes #F76331 #F78B31 #ED7C1F
+Indians #CC2D55 #A10616 #A60011
 Lizards #4FA93F 
 Tar Heels #383838 
-Dancing Divas 
-Scouts 
+Dancing Divas #FA00DD
+Scouts #168231
 Crimson Giants #DC143C 
 Robins #ED872D 
-Hilltoppers 
-Great Danes 
-Railsplitters 
-Argonauts 
-Stags 
-Trojans 
-Avalanche 
+Hilltoppers #0EB037
+Great Danes #544B0F #5E551A
+Railsplitters #4F4A29
+Argonauts #EDAD21
+Stags #805700 #CC9D37
+Trojans #FAAC05
+Avalanche #FFFFFF
 Elephants #8D847F 
-Red Men 
-Bridges 
-Mountaineers 
-Heat 
-Soul 
+Red Men #E32427
+Bridges #73420A
+Mountaineers #574939 #BAA893
+Heat #FF8133 #FF4B33 #FFD633
+Soul #33FFFC #05FFFB #D9FAF9
 Hammers #FB607F 
 Minutemen #EDCCB3 
 Boilermakers #383838 
-Bulldogs Hornets 
-49ers 
+49ers #FA0223
 Strawberry Jam #9B1500 #4F86F7 #D53032 #E4D96F 
-Paladins 
-Fusion 
-Knicks 
-Red Jackets 
-Aresenal 
+Paladins #FAD502 #F5DE5B #FAF732
+Fusion #F20A72 #FF0AF7
+Knicks #2B0AFF
+Red Jackets #FF0A60
+Aresenal #FA1E51
 Crimson Hawks #DC143C 
-Glovers 
-Hatchetmen 
-Baggies 
-Knights #010208 
-Kingsmen 
-Jaguars 
-Cheifs 
+Glovers #28B05A #B06C28
+Hatchetmen #A65A0D #8F0B0B
+Baggies #573D01
+Knights #010208 #757575
+Kingsmen #E3A617 #E31746 #A8119E
+Jaguars #BA8D11
+Cheifs #EDED1A #FA0F5D
 Devils #7D1C1C 
 Grasshoppers #664C28 #A09238 
-Swedes 
-Vikings 
-War Eagles 
+Swedes #FAEA0F #0F1FFA
+Vikings #43E3E6 #90D0D1 #35AAF2
+War Eagles #7F9BAD
 Flames #E25822 #E25822 
-Warriors 
+Warriors #C4254D #800322
 Ash Trees #8C8475 #228B22 #E7E6E0 
-Canadiens 
+Canadiens #F21120
 Team #80461B 
 Skywalkers #87CEEB 
-Blackflies 
+Blackflies #0D0809
 Buffaloes #F0DC82 #F0DC82 #64AC58 #EDC482 
-Heed 
-Imps 
-Bantams 
+Imps #D60FBC #FA23DD #FA2363 #E81730
+Bantams #EDD3B7 #C4A17C
 Golden Flashes #8C8475 #FFD700 #E7E6E0 #FFD700 
-Fever 
-The Lancers 
-Queens 
+Fever #FF6164 #FA2D30
+The Lancers #D074D4 #F5B625
+Queens #F525EE #F500ED
 Kelleys 
-Bulls 
+Bulls #8A5B19 #8A1933 #CF1D46
 Tartans #383838 #D2B48C 
-Tornadoes 
+Tornadoes #8A8A8A
 Crimson #DC143C 
 Red Wings 
 Daggers 
