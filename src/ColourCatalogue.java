@@ -164,15 +164,31 @@ public class ColourCatalogue {
 	public Vector<Vector<String>> getNearestColours(HashMap<String, Vector<String>> map, String my_rgb,double range){
 		Vector<Vector<String>> nearest_colours = new Vector<Vector<String>>();
 		for (Map.Entry<String, Vector<String>> entry : map.entrySet()) {		//go through every entry in the hash table			
-			for(String rgb : entry.getValue()){
+			if(entry.getValue().size() > 5){
+				for(String rgb : entry.getValue()){
 					double distance = colour_table.get_distance(rgb, my_rgb);	//get the distance from each code
-					if(distance < range){				
-						Vector<String> nearest_colour = new Vector<String>();
-						nearest_colour.add(entry.getKey());
-						nearest_colour.add(rgb);
-						nearest_colours.add(nearest_colour);
+					if(distance < range){
+						if(distance < 0.0005){
+							Vector<String> nearest_colour = new Vector<String>();
+							nearest_colour.add(entry.getKey());
+							nearest_colour.add(rgb);
+							nearest_colours.add(nearest_colour);
+						}
 					}
 				
+			}
+			}
+			else{
+				for(String rgb : entry.getValue()){
+						double distance = colour_table.get_distance(rgb, my_rgb);	//get the distance from each code
+						if(distance < range){				
+							Vector<String> nearest_colour = new Vector<String>();
+							nearest_colour.add(entry.getKey());
+							nearest_colour.add(rgb);
+							nearest_colours.add(nearest_colour);
+						}
+					
+				}
 			}
 		}
 		return nearest_colours;
