@@ -514,104 +514,103 @@ Cats #2B2B2B
 Thunder 
 Tricky Trees #228B22 
 Harriers 
-Roadrunners 
-Roar 
-Generals 
-Nordiques 
+Roadrunners #3D11ED
+Roar #F78D02 #F7D302 #F7D302
+Generals #074F0D #013B06
+Nordiques #BCC425 #45B8DE
 Squirrels #78858B 
-ThunderWolves 
-Miracles 
+ThunderWolves #D8E309
+Miracles #ED2FC7 #622FED
 Red Foxes #CD5700 
-Boro 
+Boro #D92525 
 Spitfires #E25822 #B22222 
 Crows #152324 
 Tangerines #D2B48C #F28500 
-Marlins 
+Marlins #9E23DB #2332DB
 Lilywhites #ECE6C8 
-Utes 
-Skunks 
-Latics 
-Pilgrims 
-Terrapins 
-Warhawks 
-Barons 
-Brigade 
+Utes #B8091B #DB2336
+Skunks #020305 #E1E5EB
+Latics #3266AB
+Pilgrims #0D58BA #C3D1E3
+Terrapins #0C630F #6B910A 
+Warhawks #91173C #120308
+Barons #5C3A1C #FA054E
+Brigade #0A29F2 #F51115
 Sagehens #9FC3A9 #9C8F60  
-Packers 
-Dons 
-Scorpions 
-Retrievers 
+Packers #154218 #001285
+Dons #080705 #040C59
+Scorpions #FA1933 #B56E10
+Retrievers #E8E80C #DEDE71
 Lambs #F8F7F4 
 Badgers #808080 
-Jackrabbits 
+Jackrabbits #FAF8F5 #EBA0AD
 Golden Grizzlies #FFD700 #FFD700 
-Toffees #8E593C 
-Diplomats 
-Lords 
-Trotters 
+Toffees #8E593C #BF8232 
+Diplomats #0A0606
+Lords #FFE11F #F20717
+Trotters #4A311C #AB7244
 Sports #441A1A 
-Pros 
+Pros #26E81C #FA2557
 Tarzans #383838 
-Aztecs 
-Americans 
-Wildcats #2B2B2B 
-Monkey hangers 
+Aztecs #010108 #0C10F2
+Americans #FF0011 #0004FF
+Wildcats #2B2B2B #E33A0B 
+Monkey hangers #4D200C #58D627
 Steelers #4682B4 #686F82 
 Golden Bulls #FFD700 #FFD700 
 North Stars #FAFDEC #383838 
-Westerners 
-Groove 
-Commodores 
-Blue Thunder 
-Poets 
-Blue Rebels 
-Matadors 
-Wild 
-Griffins 
-Rivermen 
-Tynesiders 
-Intimidators 
-Glory 
+Westerners #C24008 #6B2D12
+Groove #E349D1 #780E6C
+Commodores #3115CF #8D7EDE
+Blue Thunder #146AFF #F3FA2A
+Poets #804BB3 #820AF2 
+Blue Rebels #374BCC #2BACB3
+Matadors #F20028 #940019 #8F8300
+Wild #219E1B #091F7A
+Griffins #EBA80C #FFB300
+Rivermen #1AA125 #64D9D7
+Tynesiders #FF0000 #0015FF
+Intimidators #04066B #630011 #000000
+Glory #260863 #C6ED02
 Silverswords #C0C0C0 #C0C0C0 
 Beavers #964B00 
-Bonnies 
-Cod Army 
-Kings 
-Hoyas 
+Bonnies #362E15 #705B16
+Cod Army #3815E8
+Kings #E7FF0A #A8001C
+Hoyas E88BE7
 Mountain Cats #2B2B2B 
 Maple Leafs #CB410B #CB410B #FFB963 #008000 
-Blitz 
-Potters 
-Peacocks #1D618C 
-Baskethounds 
+Blitz #F56607 #E3E312 #D65600
+Potters #FF6600 #030202
+Peacocks #1D618C #17BD6A
+Baskethounds #543C1B #543C1B
 Golden Tornadoes #FFD700 #FFD700 
 Gold Miners #FFD700 #FFD700 
-Shrews 
+Shrews #EDA642 #704810
 Sky Blues #87CEEB 
-Valiants 
+Valiants #F02222 #ED4242
 Lions #C19A6B 
-Villans 
-Chanticleers 
-Tribe 
-Victory 
+Villans #4D1769 #7BFF00 #04054D
+Tribe #2C8F27 #6E551A
+Victory #F0A8EF #F5EE2A
 Flash #8C8475 #E7E6E0 
-Privateers 
+Privateers #DE0D29 #0D0204
 Spartans #D2B48C 
-Rush 
+Rush #FF8635 #F20C2B
 Suns #FFCC33 #FFB310 
 Banana Slugs #FFE135 
-Pygmies 
-Cadets 
-Big Blues 
-Bull Riders 
-Boll Weevils 
-Whites 
+Pygmies #11ED23 #305E34 
+Cadets #578A3F #EDD311
+Big Blues #0626D6
+Bull Riders #4A3E1B #8F0A0C
+Boll Weevils #4A3D18
+Whites #FFFFFF
 Bearcats #2B2B2B #8F6E4B 
-Marines 
-Spirit 
-Panthers 
-Celts 
-Big Green 
-Naturals 
-Dukes 
-Little Giants 
+Marines #81F0EA
+Spirit #DA60E0 #690D6E
+Panthers #0B1209
+Celts #71E352 #3A9121
+Big Green #29B304
+Naturals #EDCA91 #FF9D00
+Dukes #F2073E 
+Little Giants #1361F2 #0F07F2
