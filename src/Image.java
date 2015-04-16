@@ -38,7 +38,7 @@ public class Image {
     
     public static void main(String[] args) throws IOException {
     	Image img  = new Image("FF3300");
-    	ImageIO.write(img.getImage(), "png", new File("pattern_0_.png"));// this will create an image file
+    	ImageIO.write(img.getImage(), "png", new File("jersey.png"));// this will create an image file
     }	
     
 }
