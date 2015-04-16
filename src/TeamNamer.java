@@ -28,7 +28,9 @@ public class TeamNamer {
 	
 	public String generateName(){
 		String place = placeInventory.getRandomPlace();
+		System.out.println(place);
 		String ending = generateEnding();
+		System.out.println(ending);
 		String nickname = generateNickname(ending);
 		
 		return "The " + place + " " + ending + " aka the " + nickname;
@@ -38,10 +40,13 @@ public class TeamNamer {
 		String ending = "ERROR";
 		double shortestDistance = 1000.0;
 		double distance;
+		String next;
 		
 		Iterator i = teamEndings.entrySet().iterator();
 		while(i.hasNext()){
 			Map.Entry<String, Vector<String>> pairs = (Map.Entry<String, Vector<String>>)i.next();
+			next = pairs.getKey();
+//			System.out.println(next);
 			Iterator<String> j = pairs.getValue().iterator();
 			while(j.hasNext()){
 				distance = colourTable.get_distance(rgbCode, j.next());
@@ -49,6 +54,7 @@ public class TeamNamer {
 				if(distance < shortestDistance){
 					shortestDistance = distance;
 					ending = pairs.getKey();
+//					System.out.println(ending);
 				}
 			}
 		}
@@ -62,7 +68,7 @@ public class TeamNamer {
 	}
 	
 	public static void main(String args[]){
-		TeamNamer namer = new TeamNamer("#008000");
+		TeamNamer namer = new TeamNamer("#B31BA1");
 		System.out.println(namer.generateName());
 	}
 }
