@@ -435,118 +435,113 @@ Ravens #252629
 Saints #F5C70F
 Biscuitmen #E8D2BB
 Cornhuskers #FBEC5D
-Tigers #CB7119
-Bills 
-Manatees 
-Lancers 
+Tigers #CB7119 #EDB409
+Bills #521DF2 #9C690C
+Manatees #7E8696 #ACAFB5
+Lancers #6419D4 #7D60A8 #B3BAA9
 Lumberjacks #635147
-Artichokes 
-Braves 
-Lakers 
+Artichokes #60CC52
+Braves #A11523
+Lakers #1597A1
 Demon Deacons #7D1C1C
-Tidal Wave 
-Orange 
+Tidal Wave #18C0CC #58BDC4 #18B0C4
+Orange #FF9203
 Sugar Bears #FEFEFE #B98E63 #8F6E4B
-Gamecocks 
-Lopers 
-Posse 
+Gamecocks #B38447 #B34747
+Lopers #612222
+Posse #5E3434
 Blugolds #FFD700 #FFD700
 Sandgrounders #C2B280 #EDC9AF
-Mules 
+Mules #6E5050 #857676
 She Devils #7D1C1C
-Carp 
-Cobbers 
+Carp #8F9296 #A1A3A6
+Cobbers #242C36
 Mushrooms #AC9379
-Timberwolves 
+Timberwolves #4C555E
 Pools #BFA070
-Nanooks 
-Stampede 
-Quakers 
-Hoosiers 
-Wave 
+Nanooks #CFB161 #A86C42 #CCA68B
+Stampede #CC2B2B
+Quakers #000000
+Hoosiers #000000
+Wave #37AEB0 #3CE5E8 #3C92E8
 Rockets #BA3B3D
 Pink Pandas #00608B
-Spireites 
+Spireites #0B56A1
 Golden Hurricane #FFD700 #FFD700
-Redhawks 
-Wild Kittens 
-Falcons 
-Red Wolves 
+Redhawks #DB5C5C #D12A2A
+Wild Kittens #FF00F7 #E815E1
+Falcons #A3C2C2 #78B3B3
+Red Wolves #E84343 #A87B7B
 Red Devils #7D1C1C
-Gulls 
-Canaries 
-Volcanoes 
-Yanks 
-Bengals 
-Wonder Boys 
-Gators 
-Sabres 
-Razorbacks 
-Stute 
-Oles 
+Gulls #DEDEDE #EDEDED
+Canaries #F0FA2A #F0FC0A
+Volcanoes #FC8B0A #FC5B0A
+Yanks #FC0A0A #3B0AFC
+Bengals #FCA40A #FC830A
+Wonder Boys #FCBC0A
+Gators #60AB05 #427502
+Sabres #687558 #ADBA9C
+Razorbacks #7A6125 #7A2525
+Stute #913A00
 Red Storm #858F87
-Dazzle 
-Colonels 
+Dazzle #EDAC15 #A600DE #DE00DA
+Colonels #06700D #025E08
 Black Stars #FAFDEC #383838
-Olympians 
-Purple Aces 
-Hustlin’ Quakers 
-Statesmen 
+Olympians #E8C320 #FCCE00
+Purple Aces #A208BD #6A007D
+Hustlin’ Quakers #4D0411
+Statesmen #041D4D #09317D
 Cats #2B2B2B 
-Thunder 
+Thunder #465B82 #EAFF00
 Tricky Trees #228B22
-Harriers 
-Roadrunners 
-Roar 
-Generals 
-Nordiques 
+Harriers #D0D1C5
+Roadrunners #F00C32
+Roar #F0C20C #F0270C
+Generals #0D6605 #283CA8
+Nordiques #647AF5
 Squirrels #78858B
-ThunderWolves 
-Miracles 
+ThunderWolves #4C5270 #606791
+Miracles #E8CA20
 Red Foxes #CD5700
-Boro 
 Spitfires #E25822 #B22222
 Crows #152324
 Tangerines #D2B48C #F28500
-Marlins 
+Marlins #5E616E #9499B5
 Lilywhites #ECE6C8
-Utes 
-Skunks 
-Latics 
-Pilgrims 
-Terrapins 
-Warhawks 
-Barons 
-Brigade 
+Skunks #0A0302 #000000
+Pilgrims #EDEDEB #080601 #CCAE29
+Terrapins #203809 #C4D65C
+Warhawks #C44747 #AB9A9A
+Barons #EB1313 #8A0B0B
+Brigade #911616 #4D330F
 Sagehens #9FC3A9 #9C8F60
-Packers 
-Dons 
-Scorpions 
-Retrievers 
+Packers #3A7A06
+Dons #C4AE49
+Scorpions #0A0902 #857A03
+Retrievers #F2E65E
 Lambs #F8F7F4
 Badgers #808080
-Jackrabbits 
+Jackrabbits #B89F5C #D4D0C5
 Golden Grizzlies #FFD700 #FFD700
 Toffees #8E593C
-Diplomats 
-Lords 
-Trotters 
+Diplomats #FFFFFF #C4C4C4
+Lords #EDB415 #0D1373
 Sports #441A1A
-Pros 
+Pros #B6B7CC
 Tarzans #383838
-Aztecs 
-Americans 
+Aztecs #FC1414 #E8D71A #FCAF08
+Americans #FC0820
 Wildcats #2B2B2B
-Monkey hangers 
+Monkey hangers #946D25
 Steelers #4682B4 #686F82
 Golden Bulls #FFD700 #FFD700
 North Stars #FAFDEC #383838
-Westerners 
-Groove 
-Commodores 
-Blue Thunder 
-Poets 
-Blue Rebels 
+Westerners #C49743 #E61C1C
+Groove #B31292 #09E026
+Commodores #0910E0
+Blue Thunder #2ABEEB #312AEB
+Poets #7371BF
+Blue Rebels #0800FC
 Matadors 
 Wild 
 Griffins 
