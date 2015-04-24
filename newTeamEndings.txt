@@ -540,55 +540,54 @@ Westerners #C49743 #E61C1C
 Groove #B31292 #09E026
 Commodores #0910E0
 Blue Thunder #2ABEEB #312AEB
-Poets #7371BF
+Poets #7371BF #E739FA
 Blue Rebels #0800FC
-Matadors 
-Wild 
-Griffins 
-Rivermen 
-Tynesiders 
-Intimidators 
-Glory 
-Silverswords #C0C0C0 #C0C0C0
-Beavers #964B00
-Bonnies 
-Cod Army 
-Kings 
-Hoyas 
+Matadors #D7111E #FA3946
+Wild #44BA32 #503610
+Griffins #D4780F #DB5D09
+Rivermen #1329E8 #44BDB9
+Tynesiders #135AE8 #E81330
+Intimidators #080509 
+Glory #EDF337 #BC1BCE
+Silverswords #76736C
+Beavers #964B00 #41361B
+Bonnies #A148B3 #DFA4EB
+Cod Army #487AB3
+Kings #B0293B #CEC213
+Hoyas #F9A90A #F33E62
 Mountain Cats #2B2B2B
 Maple Leafs #CB410B #CB410B #FFB963 #008000
-Blitz 
-Potters 
-Peacocks #1D618C
-Baskethounds 
+Blitz #FD9917 #F1F90A
+Potters #ECB621 #514629
+Peacocks #1D618C #2FA452
+Baskethounds  #2B2112 #725420
 Golden Tornadoes #FFD700 #FFD700
 Gold Miners #FFD700 #FFD700
-Shrews 
-Sky Blues #87CEEB
-Valiants 
-Lions #C19A6B
-Villans 
-Chanticleers 
-Tribe 
-Victory 
+Shrews #553B0D
+Sky Blues #87CEEB #47E3F5
+Valiants #D4000E #F54752
+Lions #C19A6B #C6D400
+Villans #100A01 #5C0E83
+Tribe #0E842E #462D03
+Victory #4822B0 #781098
 Flash #8C8475 #E7E6E0
-Privateers 
-Spartans #D2B48C
-Rush 
+Privateers #1606FF #1C510B
+Spartans #D2B48C #FF0606
+Rush #F00B0B #FFFF06
 Suns #FFCC33 #FFB310
-Banana Slugs #FFE135
-Pygmies 
-Cadets 
-Big Blues 
-Bull Riders 
-Boll Weevils 
-Whites 
+Banana Slugs #FFE135 #E0F93D
+Pygmies #D116EE #E66DF9
+Cadets #FF0426 #169FEE
+Big Blues #0E1DF6 #0611AF
+Bull Riders #5E4410 #03040B
+Boll Weevils #513C12 #A9740A
+Whites #FFFFFF
 Bearcats #2B2B2B #8F6E4B
-Marines 
-Spirit 
-Panthers 
-Celts 
-Big Green 
-Naturals 
-Dukes 
-Little Giants 
+Marines #11ECDD #35610E
+Spirit #F42FFA #CB6ECE
+Panthers #0A0E08 
+Celts #7BF037 #95F25F
+Big Green #3A9C02 #63FF09
+Naturals #2CDE6D #67E41E
+Dukes #D10E21 #870815
+Little Giants #113ED0 #F30E24
