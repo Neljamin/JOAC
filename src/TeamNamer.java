@@ -12,7 +12,7 @@ public class TeamNamer {
 	private PlaceInventory placeInventory;
 	private ColourTable colourTable;
 	private HashMap<String, Vector<String>> teamEndings;
-	private HashMap<String, Vector<String>> teamNicknames;
+	private HashMap<String, Vector<Vector<String>>> teamNicknames;
 	
 	private class NameChecker{
 		private int score;
@@ -30,30 +30,13 @@ public class TeamNamer {
 		}
 		
 		private void generateScore(){
-			String temp;
-			
 			if(name.charAt(0) == targetName.charAt(0)){ //check for alliteration
 				score += 10;
-			}
-			
-			if(Character.isLowerCase(name.charAt(0))){  
-				if(name.contains("_")){ //if the we're checking a nickname
-					temp = name.substring(0, name.indexOf("_"));
-				}
-				
-				else{
-					temp = name;
-				}
-				
-				if(targetName.contains(temp)){
-					score += 10;
-				}
 			}
 		}
 	}
 	
-	public TeamNamer(String rgb){
-		rgbCode = rgb;
+	public TeamNamer(){
 		teamEndingMap = new TeamEndingsMap("newTeamEndings.txt");
 		teamNicknameMap = new TeamNicknameMap();
 		placeInventory = new PlaceInventory();
@@ -62,7 +45,8 @@ public class TeamNamer {
 		teamNicknames = teamNicknameMap.getNicknames();
 	}
 	
-	public String generateName(){
+	public String generateName(String rgb){
+		rgbCode = rgb;
 		String place = placeInventory.getRandomPlace();
 		System.out.println(place);
 		String ending = generateEnding(place);
@@ -113,19 +97,30 @@ public class TeamNamer {
 	
 	private String generateNickname(String teamEnding){
 		int score = 0, highestScore = 0;
+		Vector<String> nextVector = new Vector<String>();
+		Vector<String> nicknameFinalists = new Vector<String>();
+		String nextString = "";
 		String nickname = "ERROR";
-		Vector<String> potentialNicknames = teamNicknames.get(teamEnding);
-		for(int i = 0; i < potentialNicknames.size(); i++){
-			NameChecker nameChecker = new NameChecker(potentialNicknames.elementAt(i), teamEnding);
+		Vector<Vector<String>> potentialNicknames = teamNicknames.get(teamEnding);
+		Iterator<Vector<String>> i = potentialNicknames.iterator();
+		while(i.hasNext()){
+			nextVector = i.next();
+			if(colourTable.get_distance(nextVector.elementAt(1), rgbCode) < 0.2){
+				nicknameFinalists.add(nextVector.elementAt(0));
+			}
+		}
+		
+		for(int k = 0; k < nicknameFinalists.size(); k++){
+			NameChecker nameChecker = new NameChecker(nicknameFinalists.elementAt(k), teamEnding);
 			score = nameChecker.getScore();
 			if(highestScore < score){
-				nickname = potentialNicknames.elementAt(i);
+				nickname = nicknameFinalists.elementAt(k);
 				highestScore = score;
 			}
 		}
 		
-		if(highestScore == 0){
-			nickname = potentialNicknames.elementAt(0);
+		if(highestScore == 0){ //Default choice if all have a zero score
+			nickname = nicknameFinalists.elementAt(0);
 		}
 		
 		System.out.println(nickname);
@@ -133,7 +128,7 @@ public class TeamNamer {
 	}
 	
 	public static void main(String args[]){
-		TeamNamer namer = new TeamNamer("#E8BA23");
-		System.out.println("Name = " + namer.generateName());
+		TeamNamer namer = new TeamNamer();
+		System.out.println("Name = " + namer.generateName("#E8BA23"));
 	}
 }
