@@ -11,7 +11,7 @@ public class TeamNicknameMap {
 	private ColourTable colour_table = new ColourTable("colours.txt");
 	private ColourCatalogue colour_catalogue = new ColourCatalogue(colour_table);
 	private TeamEndingsMap team_endings_map = new TeamEndingsMap("newTeamEndings.txt");
-	static HashMap<String, Vector<String>> team_nickname_map = new HashMap<String, Vector<String>>();
+	static HashMap<String, Vector<Vector<String>>> team_nickname_map = new HashMap<String, Vector<Vector<String>>>();
 	
 	public TeamNicknameMap(){
 		generateNicknames();
@@ -23,7 +23,7 @@ public class TeamNicknameMap {
 		HashMap<String, Vector<String>> unigram_readymades = colour_catalogue.getreadymadeUnigrams();
 
 		for (Map.Entry<String, Vector<String>> entry : team_endings_map.getTeamEndingMap().entrySet()){
-			Vector<String> nicknames = new Vector<String>(); 
+			Vector<Vector<String>> nicknames = new Vector<Vector<String>>(); 
 			for(String ending_colour : entry.getValue()){
 				
 				Vector<Vector<String>> readymades = new Vector<Vector<String>>();
@@ -36,6 +36,7 @@ public class TeamNicknameMap {
 					temp.addAll(colour_catalogue.getNearestColours(unigram_readymades, ending_colour, range));
 					for(Vector<String> colours : temp){
 						colours.add(0, English.plural(colours.elementAt(0)));
+						
 					}
 					
 					readymades.addAll(temp);
@@ -43,8 +44,10 @@ public class TeamNicknameMap {
 					range += 0.02;
 				}
 				for(Vector<String> nickname : readymades){
-				
-					nicknames.add(nickname.firstElement());
+					if(nickname.size() == 3){
+						nickname.removeElementAt(1);
+					}
+					nicknames.add(nickname);
 				}
 				
 
@@ -71,7 +74,7 @@ public class TeamNicknameMap {
 	
 
 	
-	private void print_to_file(HashMap<String, Vector<String>> hmap, String outputFile){
+	private void print_to_file(HashMap<String, Vector<Vector<String>>> hmap, String outputFile){
 		try{
 			File outfile = new File("output\\"+outputFile);
 			if (!outfile.exists()) {
@@ -80,10 +83,10 @@ public class TeamNicknameMap {
 			FileWriter fw = new FileWriter(outfile.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
 			
-			for (Map.Entry<String, Vector<String>> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
+			for (Map.Entry<String, Vector<Vector<String>>> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
 			    bw.write(entry.getKey()+" = [");		//write the key an the value to the specified file
-			    for(String rgb : entry.getValue()){
-			    	bw.write(rgb+",");
+			    for(Vector<String> rgb : entry.getValue()){
+			    	bw.write(rgb.toString()+",");
 			    }
 			    bw.write(" ]");
 				bw.newLine();
@@ -98,7 +101,7 @@ public class TeamNicknameMap {
 		print_to_file(team_nickname_map,"teamNicknamesMap.txt");
 	}
 	
-	public HashMap<String, Vector<String>> getNicknames(){
+	public HashMap<String, Vector<Vector<String>>> getNicknames(){
 		return team_nickname_map;
 	}
 	
