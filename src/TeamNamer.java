@@ -6,14 +6,13 @@ import java.util.Vector;
 
 public class TeamNamer {
 	
-	private String rgbCode;
+	private String rgbCode, tweetString;
 	private TeamEndingsMap teamEndingMap;
 	private TeamNicknameMap teamNicknameMap;
 	private PlaceInventory placeInventory;
 	private ColourTable colourTable;
 	private HashMap<String, Vector<String>> teamEndings;
 	private HashMap<String, Vector<String>> teamNicknames;
-	private Vector<String> places;
 	
 	private class NameChecker{
 		private int score;
@@ -37,14 +36,15 @@ public class TeamNamer {
 				score += 10;
 			}
 			
-			if(Character.isLowerCase(name.charAt(0))){ //if the we're checking a nickname which all start with lowercases.
-				if(name.contains("_")){
+			if(Character.isLowerCase(name.charAt(0))){  
+				if(name.contains("_")){ //if the we're checking a nickname
 					temp = name.substring(0, name.indexOf("_"));
 				}
 				
 				else{
 					temp = name;
 				}
+				
 				if(targetName.contains(temp)){
 					score += 10;
 				}
@@ -60,7 +60,6 @@ public class TeamNamer {
 		colourTable = new ColourTable("colours.txt");
 		teamEndings = teamEndingMap.getTeamEndingMap();
 		teamNicknames = teamNicknameMap.getNicknames();
-		places = placeInventory.getPlaces();
 	}
 	
 	public String generateName(){
@@ -69,24 +68,21 @@ public class TeamNamer {
 		String ending = generateEnding(place);
 		System.out.println(ending);
 		String nickname = generateNickname(ending);
+		tweetString = "The " + place + " " + ending + " aka the " + nickname;
 		
-		return "The " + place + " " + ending + " aka the " + nickname;
+		return tweetString.replace('_', ' ');
 	}
 	
 	private String generateEnding(String place){
 		String ending = "ERROR";
 		String placeName = place;
 		Vector<String> endings = new Vector<String>();
-		double shortestDistance = 1000.0;
 		double distance;
 		int score = 0, highestScore = 0;
-//		String next;
 		
 		Iterator i = teamEndings.entrySet().iterator();
 		while(i.hasNext()){
 			Map.Entry<String, Vector<String>> pairs = (Map.Entry<String, Vector<String>>)i.next();
-//			next = pairs.getKey();
-//			System.out.println(next);
 			Iterator<String> j = pairs.getValue().iterator();
 			while(j.hasNext()){
 				distance = colourTable.get_distance(rgbCode, j.next());
@@ -94,7 +90,6 @@ public class TeamNamer {
 				if(distance < 0.2){
 					System.out.println("Adding " + pairs.getKey());
 					endings.add(pairs.getKey());
-//					System.out.println(ending);
 				}
 			}
 		}
@@ -133,11 +128,12 @@ public class TeamNamer {
 			nickname = potentialNicknames.elementAt(0);
 		}
 		
+		System.out.println(nickname);
 		return nickname;
 	}
 	
 	public static void main(String args[]){
-		TeamNamer namer = new TeamNamer("#B513BA");
-		System.out.println(namer.generateName());
+		TeamNamer namer = new TeamNamer("#E8BA23");
+		System.out.println("Name = " + namer.generateName());
 	}
 }
