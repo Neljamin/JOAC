@@ -97,17 +97,21 @@ public class TeamNamer {
 	
 	private String generateNickname(String teamEnding){
 		int score = 0, highestScore = 0;
+		double range = 0.2;
 		Vector<String> nextVector = new Vector<String>();
 		Vector<String> nicknameFinalists = new Vector<String>();
-		String nextString = "";
+//		String nextString = "";
 		String nickname = "ERROR";
 		Vector<Vector<String>> potentialNicknames = teamNicknames.get(teamEnding);
 		Iterator<Vector<String>> i = potentialNicknames.iterator();
 		while(i.hasNext()){
 			nextVector = i.next();
-			if(colourTable.get_distance(nextVector.elementAt(1), rgbCode) < 0.2){
-				nicknameFinalists.add(nextVector.elementAt(0));
-			}
+			while(nicknameFinalists.isEmpty()){
+				if(colourTable.get_distance(nextVector.elementAt(1), rgbCode) < range){
+					nicknameFinalists.add(nextVector.elementAt(0));
+				}
+				range += 0.1;
+			}	
 		}
 		
 		for(int k = 0; k < nicknameFinalists.size(); k++){
