@@ -1,3 +1,4 @@
+package Images;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -18,8 +19,12 @@ public class Image {
 		image = layerImageFiles();
 	}
 	
-	public BufferedImage getImage(){
-		return image;
+	public void createImage(String createFile){
+		try{
+			ImageIO.write(image, "png", new File(createFile));
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 	}
     
     private  BufferedImage layerImageFiles(){
@@ -36,9 +41,9 @@ public class Image {
     
     //MAIN METHOD
     
-    public static void main(String[] args) throws IOException {
-    	Image img  = new Image("FF3300");
-    	ImageIO.write(img.getImage(), "png", new File("jersey.png"));// this will create an image file
-    }	
+//    public static void main(String[] args) throws IOException {
+//    	Image img  = new Image("FF3300");
+//    	ImageIO.write(img.getImage(), "png", new File("jersey.png"));// this will create an image file
+//    }	
     
 }

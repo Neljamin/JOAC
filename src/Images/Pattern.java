@@ -1,3 +1,4 @@
+package Images;
 /* make sure the folder containing the patterns are in the following format:
  *  
  *   folder(patterns) --> folder(pattern_0)   --> 	file(layer_0)
@@ -94,7 +95,7 @@ public class Pattern {
 		
 		Random generator = new Random();
 		int randIndex = generator.nextInt(patterns.size());
-		return patterns.get(PATTERN_NUMBER);  // will return random pattern when complete
+		return patterns.get(randIndex);  // will return random pattern when complete
 	}
 	
 	// this method returns all file names in the given directory

@@ -1,3 +1,4 @@
+package Data;
 /*	Name: Jonathan Doyle 
  *	Student Number:12443578
  * 	Assignment 1
