@@ -30,10 +30,16 @@ public class Image {
     private  BufferedImage layerImageFiles(){
     	Vector<BufferedImage> layers = pattern.getImages();
     	BufferedImage layred = new BufferedImage(pattern.width(), pattern.height(), BufferedImage.TYPE_INT_ARGB);
-    	
+    	int layerCount = 0;
     	Graphics imageGraphics = layred.getGraphics();
     	for(BufferedImage layer : layers){
-    		imageGraphics.drawImage(layer, 0 , 0, null);
+    		if(layerCount == 0){
+        		imageGraphics.drawImage(layer, 0 , 0, null);
+    		}
+    		else{
+        		imageGraphics.drawImage(layer, 110, 0, null);
+    		}
+    		layerCount++;
     	}
     	return layred;
     }
@@ -41,9 +47,9 @@ public class Image {
     
     //MAIN METHOD
     
-//    public static void main(String[] args) throws IOException {
-//    	Image img  = new Image("FF3300");
-//    	ImageIO.write(img.getImage(), "png", new File("jersey.png"));// this will create an image file
-//    }	
+    public static void main(String[] args) throws IOException {
+    	Image img  = new Image("abc44c");
+    	img.createImage("jersey1.png");
+    }	
     
 }
