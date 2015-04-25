@@ -1,9 +1,8 @@
-package Images;
+package everyTeamBot;
+
 import java.util.Arrays;
 
 public class ColourShader {
-	
-	private double BACKGROUND_LIGHTER = 0.333; 
 
 	private int[] hexToInts(String hex){
 
@@ -44,8 +43,6 @@ public class ColourShader {
 		for (int i = 1; i < darkerColourBands.length; i++) {
 			colourBands[i + lighterColourBands.length - 1] = darkerColourBands[i];
 		}
-		
-		colourBands[0] = lighten(colourBands[0], BACKGROUND_LIGHTER);
 		
 		return colourBands;
 	}
