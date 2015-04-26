@@ -1,5 +1,6 @@
 package Data;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -50,10 +51,9 @@ public class TeamNamer {
 	public String[] generateName(String rgb){
 		rgbCode = rgb;
 		String place = placeInventory.getRandomPlace();
-		System.out.println(place);
 		String ending = generateEnding(place);
-		System.out.println(ending);
 		String nickname = generateNickname(ending);
+		nickname = capitalize(nickname);
 		String[] nameParts = new String[]{place, ending, nickname};
 		
 		return nameParts;
@@ -74,7 +74,6 @@ public class TeamNamer {
 				distance = colourTable.get_distance(rgbCode, j.next());
 				//LOOK FOR ANY COLOUR WITHIN 0.2 RANGE AND SEND IT TO THE SCORE CHECKER
 				if(distance < 0.2){
-					System.out.println("Adding " + pairs.getKey());
 					endings.add(pairs.getKey());
 				}
 			}
@@ -83,7 +82,6 @@ public class TeamNamer {
 		for(int j = 0; j < endings.size(); j++){
 			NameChecker nameChecker = new NameChecker(endings.elementAt(j), placeName);
 			score = nameChecker.getScore();
-			System.out.println("Score for " + endings.elementAt(j) + " = " + score);
 			if(highestScore < score){
 				ending = endings.elementAt(j);
 				highestScore = score;
@@ -129,12 +127,26 @@ public class TeamNamer {
 			nickname = nicknameFinalists.elementAt(0);
 		}
 		
-		System.out.println(nickname);
 		return nickname;
+	}
+	
+	private String capitalize(String nickname){
+		if(nickname.contains("_")){
+			String[] parts = nickname.split("_");
+			String newPart = Character.toUpperCase(parts[0].charAt(0)) + parts[0].substring(1);
+			String newPart2 = Character.toUpperCase(parts[1].charAt(0)) + parts[1].substring(1);
+			return newPart +"_"+newPart2;
+		}
+		else{
+			String nickName = Character.toUpperCase(nickname.charAt(0)) + nickname.substring(1);
+			return nickName;
+		}
 	}
 	
 	public static void main(String args[]){
 		TeamNamer namer = new TeamNamer();
-		System.out.println("Name = " + namer.generateName("#E8BA23"));
+		for(int i =0;i<50;i++){
+			System.out.println("Name = " + Arrays.toString(namer.generateName("#F21120")));
+		}
 	}
 }
