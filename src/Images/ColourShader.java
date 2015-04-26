@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class ColourShader {
 	
-	private double BACKGROUND_LIGHTER = 0.5; 
+	private double BACKGROUND_LIGHTER = 0.333; 
 
 	private int[] hexToInts(String hex){
 
@@ -45,36 +45,39 @@ public class ColourShader {
 			colourBands[i + lighterColourBands.length - 1] = darkerColourBands[i];
 		}
 		
-		colourBands[0] = lighten(colour, BACKGROUND_LIGHTER);
+		colourBands[0] = lighten(colourBands[0], BACKGROUND_LIGHTER);
 		
 		return colourBands;
 	}
 	
 	private int[] darken(int[] colour, double fraction){
+	
 		
-		int red = (int) Math.round(colour[0] - 255 * fraction) % 255;
-	    int green = (int) Math.round(colour[1] - 255 * fraction) % 255;
-	    int blue = (int) Math.round(colour[2] - 255 * fraction) % 255;
+		int red = (int) Math.round(Math.max(0, colour[0] - 255 * fraction));
+		int green = (int) Math.round(Math.max(0, colour[1] - 255 * fraction));
+		int blue = (int) Math.round(Math.max(0, colour[2] - 255 * fraction));
 	    
-	    red += red < 0 ? 255 : 0;
-	    green += green < 0 ? 255 : 0;
-	    blue += blue < 0 ? 255 : 0;
+	    if (red < 0 | green < 0 | blue < 0){
+	    	red += 255;
+	    	green += 255;
+	    	blue += 255;
+	    	red %=255;
+	    	green %=255;
+	    	blue%=255;
+	    }
 		
 		return new int[] {red, green, blue};
 	}
 	
 	private int[] lighten(int[] colour, double fraction){
+		
 	    
-	    int red = (int) Math.round(colour[0] + 255 * fraction) % 255;
-	    int green = (int) Math.round(colour[1] + 255 * fraction) % 255;
-	    int blue = (int) Math.round(colour[2] + 255 * fraction)% 255;
+		int red = (int) Math.round(Math.min( colour[0] + 255 * fraction, 255));
+		int green = (int) Math.round(Math.min( colour[1] + 255 * fraction, 255));
+		int blue = (int) Math.round(Math.min( colour[2] + 255 * fraction ,255));
 		
 		return new int[] {red, green, blue};
 	}
 	
-	public static void main(String[] args) {
-		ColourShader cs = new ColourShader();
-		System.out.print(Arrays.deepToString(cs.getColourBands("#000000", 5)));
-	}
 	
 }
