@@ -24,7 +24,7 @@ public class TeamEndingsMap {
 	public HashMap<String, Vector<String>> getTeamEndingMap(){
 		return teamEndingsMap;
 	}
-	public void readTeamEndings(String filename){
+	public void readTeamEndings(String filename){   //Reads in the team endings and their colours from the file
 		try {
 			File file = new File("data\\"+filename);
 			FileReader fileReader = new FileReader(file);
@@ -51,7 +51,7 @@ public class TeamEndingsMap {
 		}
 	}
 	
-	public void print_to_file(HashMap<String, Vector<String>> hmap, String outputFile){
+	public void print_to_file(HashMap<String, Vector<String>> hmap, String outputFile){ //prints the map to a file
 		try{
 			File outfile = new File("output\\"+outputFile);
 			if (!outfile.exists()) {

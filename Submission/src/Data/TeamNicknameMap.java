@@ -17,43 +17,44 @@ public class TeamNicknameMap {
 	public TeamNicknameMap(){
 		generateNicknames();
 	}
-	
-	private void generateNicknames(){
+	/*gets readymades from the colour catalogue based on team endings colours and puts them in a map*/
+	private void generateNicknames(){	
 		HashMap<String, Vector<String>> plural_readymades = colour_catalogue.getreadymadePluralBigrams();
 		HashMap<String, Vector<String>> bigram_readymades = colour_catalogue.getreadymadeBigrams();
 		HashMap<String, Vector<String>> unigram_readymades = colour_catalogue.getreadymadeUnigrams();
 
+		/*loops through every entry in the team endings map*/
 		for (Map.Entry<String, Vector<String>> entry : team_endings_map.getTeamEndingMap().entrySet()){
 			Vector<Vector<String>> nicknames = new Vector<Vector<String>>(); 
-			for(String ending_colour : entry.getValue()){
+			for(String ending_colour : entry.getValue()){ //loops over each colour
 				
 				Vector<Vector<String>> readymades = new Vector<Vector<String>>();
 				double range = 0.02;
-				while(readymades.size() < 5){
+				while(readymades.size() < 5){ //loop until there is at least 5 readymades for that ending
 					 
 					readymades.addAll(colour_catalogue.getNearestColours(plural_readymades, ending_colour, range));
 					Vector<Vector<String>> temp = new Vector<Vector<String>>();
 					temp.addAll(colour_catalogue.getNearestColours(bigram_readymades, ending_colour, range));
 					temp.addAll(colour_catalogue.getNearestColours(unigram_readymades, ending_colour, range));
 					for(Vector<String> colours : temp){
-						colours.add(0, English.plural(colours.elementAt(0)));
+						colours.add(0, English.plural(colours.elementAt(0))); //pluralizes the readymade
 						
 					}
 					
 					readymades.addAll(temp);
-					removeDuplicates(readymades);
-					range += 0.02;
+					removeDuplicates(readymades); 
+					range += 0.02; //increment the range to make the search wider if there is less than 5
 				}
 				for(Vector<String> nickname : readymades){
 					if(nickname.size() == 3){
 						nickname.removeElementAt(1);
 					}
-					nicknames.add(nickname);
+					nicknames.add(nickname); 			
 				}
 				
 
 			}
-			team_nickname_map.put(entry.getKey(), nicknames);
+			team_nickname_map.put(entry.getKey(), nicknames); //add all the readymades and their colour to the map
 		}
 
 	}
@@ -63,7 +64,6 @@ public class TeamNicknameMap {
 			 for(int j=0;j<v.size();j++){
 				 	if(i != v.size()){
 	                    if(i!=j){
-//	                    	System.out.println(i+","+j+","+v.size());
 	                    	if(v.elementAt(i).equals(v.elementAt(j))){
 	                    		v.removeElementAt(j);
 	                        }
@@ -85,7 +85,7 @@ public class TeamNicknameMap {
 			BufferedWriter bw = new BufferedWriter(fw);
 			
 			for (Map.Entry<String, Vector<Vector<String>>> entry : hmap.entrySet()) {	//loop through every entry in the hashmap
-			    bw.write(entry.getKey()+" = [");		//write the key an the value to the specified file
+			    bw.write(entry.getKey()+" = [");		
 			    for(Vector<String> rgb : entry.getValue()){
 			    	bw.write(rgb.toString()+",");
 			    }

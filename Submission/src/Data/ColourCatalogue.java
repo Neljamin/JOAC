@@ -162,6 +162,7 @@ public class ColourCatalogue {
 		}
 	}
 	
+	/*returns colours in  a certain range*/
 	public Vector<Vector<String>> getNearestColours(HashMap<String, Vector<String>> map, String my_rgb,double range){
 		Vector<Vector<String>> nearest_colours = new Vector<Vector<String>>();
 		for (Map.Entry<String, Vector<String>> entry : map.entrySet()) {		//go through every entry in the hash table			
