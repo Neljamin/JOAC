@@ -49,11 +49,12 @@ public class Tweeter {
 	        	
 	        	String colour = status.getText().substring(2, 8); 
 				if(!isReply(status) && !status.isRetweet()){
-					System.out.println("Got colour: "+colour);
 					Image img = new Image(colour);
 					img.createImage("jersey.png");
+					
 					String[] parts = nameGenerator.generateName("#"+colour);
 					String name = assembleTweet(parts);
+					
 					StatusUpdate statusUpdate = new StatusUpdate(name);
 					System.out.println("Tweeting: " +name); 
 					File image = new File("jersey.png");
@@ -74,9 +75,9 @@ public class Tweeter {
 	    		Vector<String>  opening = new Vector<String>();
 	    		Vector<String>  knownAs = new Vector<String>();
 	    		
-	    		opening.add("Nice colour .@everycolorbot that's the colour of the ");
-	    		opening.add("@everycolorbot I recognise that colour! That's the colour of the ");
-	    		opening.add("@everycolorbot that's the colour of my favourite team the ");
+	    		opening.add("Nice colour @everycolorbot that's the colour of the ");
+	    		opening.add(".@everycolorbot I recognise that colour! That's the colour of the ");
+	    		opening.add(".@everycolorbot that's the colour of my favourite team the ");
 	    		opening.add("I know that colour @everycolorbot that's the colour of the ");
 	    		
 	    		Random generator  = new Random();

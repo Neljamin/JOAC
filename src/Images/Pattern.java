@@ -25,11 +25,6 @@ import javax.imageio.ImageIO;
 public class Pattern {
 	
 	private static final String PATTERNS_DIRECTORY = "patterns";  // path to folder containing the patterns 
-	private static final int PATTERN_NUMBER = 0; //TODO temporary constant used for testing
-	/* if there are multiple folders in the pattern folder set this constant to what number folder 
-	 * you want to test. What ever sequence the folders in the directory are in will correspond to what 
-	 * number to use.
-	 * */
 	
 	private ColourShader shader;
 	private Vector<BufferedImage> images;  // contains all image files that makes up the pattern
@@ -39,14 +34,12 @@ public class Pattern {
 	public Pattern(String colour) {
 		shader = new ColourShader();
 		String patternDir = randomPattern();  	//selects a random pattern folder
-		System.out.println("Selected patternDir: "+patternDir);
 		Vector<String> files = getFiles(patternDir);	// gets the file names from the pattern directory
 		images = loadImages(files);						// loads the images in the pattern directory
 		BufferedImage baseLayer = images.get(0);		// gets the bottom layer i'e' the canvas
 		height = baseLayer.getHeight();
 		width = baseLayer.getWidth();
-		colurImages(colour);		//colours the the image layers
-		System.out.println("found file:"+files);
+		colurImages(colour); // colours the layer
 	}
 	
 	// returns the loaded images that make up the pattern
@@ -94,10 +87,8 @@ public class Pattern {
 		}
 		
 		Random generator = new Random();
-		System.out.println("number of patterns: "+patterns.size());
 		int randIndex = generator.nextInt(patterns.size());
-		System.out.println("Index Chosen: "+randIndex);
-		return patterns.get(randIndex);  // will return random pattern when complete
+		return patterns.get(randIndex);  // pick a random pattern
 	}
 	
 	// this method returns all file names in the given directory
@@ -117,6 +108,7 @@ public class Pattern {
     
     // this method colours each image layer to a shade of the given colour
     private void colurImages(String colour) {
+    	
     	int[][] colours = shader.getColourBands(colour, images.size());
     	
     	int counter = 0;

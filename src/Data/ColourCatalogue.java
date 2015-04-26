@@ -231,14 +231,5 @@ public class ColourCatalogue {
 		print_to_file(readymade_bigrams, "readymade_bigrams.txt");
 		print_to_file(readymade_plural_bigrams, "readymade_plural_bigrams.txt");
 		print_to_file(readymade_unigrams, "readymade_unigrams.txt");
-	}
-	
-	public static void main(String[] args) {
-		ColourTable c = new ColourTable("colours.txt");
-		ColourCatalogue cc = new ColourCatalogue(c);
-		cc.print_colours_to_files();
-	}
-	
-	
-				
+	}			
 }

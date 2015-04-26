@@ -24,34 +24,6 @@ public class TeamEndingsMap {
 	public HashMap<String, Vector<String>> getTeamEndingMap(){
 		return teamEndingsMap;
 	}
-	
-//	public void getColoursFor(String filename){
-//		
-//		try {
-//			File file = new File("data\\"+filename);
-//			FileReader fileReader = new FileReader(file);
-//			BufferedReader bufferedReader = new BufferedReader(fileReader);
-//			String line;
-//			while ((line = bufferedReader.readLine()) != null) {				//read in each line of the file
-//				String team_ending = line.toLowerCase();
-//				Vector<String> RGBs = new Vector<String>();
-//				for(Map.Entry<String, String> entry : colours.getTable().entrySet()){
-//					String[] sterotype = entry.getKey().split("_");
-//					if(team_ending.contains(sterotype[0].toLowerCase())){
-//						RGBs.add(entry.getValue());
-//					}
-//				}
-//				System.out.println(line + " " + RGBs.toString());
-//				teamEndingsMap.put(line, RGBs);
-//			}
-//			fileReader.close();
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//		
-//		
-//	}
-	/*For reading in from file after we enter the RGBs manually*/
 	public void readTeamEndings(String filename){
 		try {
 			File file = new File("data\\"+filename);
@@ -103,11 +75,5 @@ public class TeamEndingsMap {
 	
 	public void printMapToFile(){
 		print_to_file(teamEndingsMap,"teamEndingsMap.txt");
-	}
-
-	public static void main(String[] args) {
-		TeamEndingsMap t = new TeamEndingsMap("newTeamEndings.txt");
-		t.print_to_file(teamEndingsMap,"ReadTeamEndings.txt");
-		System.out.println(t.getTeamEndingMap());
 	}
 }

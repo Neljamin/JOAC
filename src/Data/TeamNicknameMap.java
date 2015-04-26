@@ -105,10 +105,4 @@ public class TeamNicknameMap {
 	public HashMap<String, Vector<Vector<String>>> getNicknames(){
 		return team_nickname_map;
 	}
-	
-	public static void main(String[] args) {
-		TeamNicknameMap tn = new TeamNicknameMap();
-//		tn.print_to_file(team_nickname_map,"teamNicknameMap.txt" );
-			
-	}
 }

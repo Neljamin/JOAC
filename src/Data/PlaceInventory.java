@@ -41,12 +41,4 @@ public class PlaceInventory {
 		int rand = (int) (Math.random() * 385);
 		return places.elementAt(rand);
 	}
-	
-	public static void main(String args[]){
-		PlaceInventory places = new PlaceInventory();
-		Iterator<String> place_it = places.getPlaces().iterator();
-		while(place_it.hasNext()){
-			System.out.println(place_it.next());
-		}
-	}
 }

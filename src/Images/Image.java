@@ -27,29 +27,22 @@ public class Image {
 		}
 	}
     
+	//this method combines all the image layers into one final image
     private  BufferedImage layerImageFiles(){
     	Vector<BufferedImage> layers = pattern.getImages();
     	BufferedImage layred = new BufferedImage(pattern.width(), pattern.height(), BufferedImage.TYPE_INT_ARGB);
     	int layerCount = 0;
     	Graphics imageGraphics = layred.getGraphics();
     	for(BufferedImage layer : layers){
-    		if(layerCount == 0){
+    		if(layerCount == 0){ // if the layer is the base layer don't offset it
         		imageGraphics.drawImage(layer, 0 , 0, null);
     		}
-    		else{
+    		else{ // if the layer isn't the base later do offset it
         		imageGraphics.drawImage(layer, 110, 0, null);
     		}
     		layerCount++;
     	}
     	return layred;
     }
-    
-    
-    //MAIN METHOD
-    
-    public static void main(String[] args) throws IOException {
-    	Image img  = new Image("00ff00");
-    	img.createImage("jersey4.png");
-    }	
-    
+   
 }

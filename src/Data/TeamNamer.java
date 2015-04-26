@@ -142,11 +142,4 @@ public class TeamNamer {
 			return nickName;
 		}
 	}
-	
-	public static void main(String args[]){
-		TeamNamer namer = new TeamNamer();
-		for(int i =0;i<50;i++){
-			System.out.println("Name = " + Arrays.toString(namer.generateName("#F21120")));
-		}
-	}
 }
