@@ -48,8 +48,8 @@ public class Image {
     //MAIN METHOD
     
     public static void main(String[] args) throws IOException {
-    	Image img  = new Image("abc44c");
-    	img.createImage("jersey1.png");
+    	Image img  = new Image("00ff00");
+    	img.createImage("jersey4.png");
     }	
     
 }

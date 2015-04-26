@@ -94,7 +94,9 @@ public class Pattern {
 		}
 		
 		Random generator = new Random();
+		System.out.println("number of patterns: "+patterns.size());
 		int randIndex = generator.nextInt(patterns.size());
+		System.out.println("Index Chosen: "+randIndex);
 		return patterns.get(randIndex);  // will return random pattern when complete
 	}
 	
@@ -115,7 +117,6 @@ public class Pattern {
     
     // this method colours each image layer to a shade of the given colour
     private void colurImages(String colour) {
-    	
     	int[][] colours = shader.getColourBands(colour, images.size());
     	
     	int counter = 0;
@@ -127,11 +128,11 @@ public class Pattern {
     		//change the colour of every pixel in the image but retain the transParency
     		for(int x = 0; x < width; x++){
     			for(int y = 0; y < height; y++){
-    				int[] pixels = raster.getPixel(x, y, (int[]) null);
-    				pixels[0] = colours[counter][0];
-    				pixels[1] = colours[counter][1];
-    				pixels[2] = colours[counter][2];
-    				raster.setPixel(x, y, pixels);
+        				int[] pixels = raster.getPixel(x, y, (int[]) null);
+        				pixels[0] = colours[counter][0];
+        				pixels[1] = colours[counter][1];
+        				pixels[2] = colours[counter][2];
+        				raster.setPixel(x, y, pixels);
     			}
     		}
     		counter++;
