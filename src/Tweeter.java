@@ -82,7 +82,7 @@ public class Tweeter {
 	    		Random generator  = new Random();
 	    		int random = generator.nextInt(opening.size());
 	    		
-	    		String tweet = opening.get(random) + parts[0] + " " + parts[1] + " a.k.a the" +parts[2].replace("_", " ");
+	    		String tweet = opening.get(random) + parts[0] + " " + parts[1] + " a.k.a the " +parts[2].replace("_", " ")+".";
 	    		return tweet;
 	    	}
 	    	
@@ -96,8 +96,8 @@ public class Tweeter {
 
 	    twitterStream.addListener(listener);
 	    
-	    //TODO
-	    long everycolorbotId = 258107892;
+	    
+	    long everycolorbotId = 1909219404l;
 	    FilterQuery query = new FilterQuery();
 	    query.follow(new long[] { everycolorbotId });
 	    twitterStream.filter(query);
