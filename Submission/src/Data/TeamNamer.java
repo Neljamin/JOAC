@@ -40,6 +40,7 @@ public class TeamNamer {
 	}
 	
 	public TeamNamer(){
+		System.out.println("Setting up data...");
 		teamEndingMap = new TeamEndingsMap("newTeamEndings.txt");
 		teamNicknameMap = new TeamNicknameMap();
 		placeInventory = new PlaceInventory();
