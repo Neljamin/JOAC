@@ -1,7 +1,10 @@
 import Data.TeamNamer;
 import Images.Image;
+
 import java.io.File;
 import java.io.IOException;
+import java.util.Random;
+import java.util.Vector;
 
 import twitter4j.FilterQuery;
 import twitter4j.StallWarning;
@@ -49,8 +52,8 @@ public class Tweeter {
 					System.out.println("Got colour: "+colour);
 					Image img = new Image(colour);
 					img.createImage("jersey.png");
-					String name = nameGenerator.generateName("#"+colour);
-					System.out.println("Generated name: "+name);
+					String[] parts = nameGenerator.generateName("#"+colour);
+					String name = assembleTweet(parts);
 					StatusUpdate statusUpdate = new StatusUpdate(name);
 					System.out.println("Tweeting: " +name); 
 					File image = new File("jersey.png");
@@ -66,6 +69,23 @@ public class Tweeter {
 	        private boolean isReply(Status status){
 	        	return status.getInReplyToStatusId() != -1;
 	        }
+	        
+	    	private String assembleTweet(String[] parts){
+	    		Vector<String>  opening = new Vector<String>();
+	    		Vector<String>  knownAs = new Vector<String>();
+	    		
+	    		opening.add("Nice colour .@everycolorbot that's the colour of the ");
+	    		opening.add("@everycolorbot I recognise that colour! That's the colour of the ");
+	    		opening.add("@everycolorbot that's the colour of my favourite team the ");
+	    		opening.add("I know that colour @everycolorbot that's the colour of the ");
+	    		
+	    		Random generator  = new Random();
+	    		int random = generator.nextInt(opening.size());
+	    		
+	    		String tweet = opening.get(random) + parts[0] + " " + parts[1] + " a.k.a the" +parts[2].replace("_", " ");
+	    		return tweet;
+	    	}
+	    	
 	        private TeamNamer nameGenerator  = new TeamNamer();
 			public void onException(Exception arg0) {}
 			public void onDeletionNotice(StatusDeletionNotice arg0) {}
@@ -76,7 +96,8 @@ public class Tweeter {
 
 	    twitterStream.addListener(listener);
 	    
-	    long everycolorbotId = 1909219404l;
+	    //TODO
+	    long everycolorbotId = 258107892;
 	    FilterQuery query = new FilterQuery();
 	    query.follow(new long[] { everycolorbotId });
 	    twitterStream.filter(query);

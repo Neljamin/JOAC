@@ -47,16 +47,16 @@ public class TeamNamer {
 		teamNicknames = teamNicknameMap.getNicknames();
 	}
 	
-	public String generateName(String rgb){
+	public String[] generateName(String rgb){
 		rgbCode = rgb;
 		String place = placeInventory.getRandomPlace();
 		System.out.println(place);
 		String ending = generateEnding(place);
 		System.out.println(ending);
 		String nickname = generateNickname(ending);
-		tweetString = "The " + place + " " + ending + " aka the " + nickname;
+		String[] nameParts = new String[]{place, ending, nickname};
 		
-		return tweetString.replace('_', ' ');
+		return nameParts;
 	}
 	
 	private String generateEnding(String place){
