@@ -51,7 +51,6 @@ public class Tweeter {
 				if(!isReply(status) && !status.isRetweet()){
 					Image img = new Image(colour);
 					img.createImage("jersey.png");
-					
 					String[] parts = nameGenerator.generateName("#"+colour);
 					String name = assembleTweet(parts);
 					
@@ -59,6 +58,7 @@ public class Tweeter {
 					System.out.println("Tweeting: " +name); 
 					File image = new File("jersey.png");
 					statusUpdate.setMedia(image);
+					
 					try {
 						twitter.updateStatus(statusUpdate);
 					} catch (TwitterException e) {
@@ -76,14 +76,22 @@ public class Tweeter {
 	    		Vector<String>  knownAs = new Vector<String>();
 	    		
 	    		opening.add("Nice colour @everycolorbot that's the colour of the ");
-	    		opening.add(".@everycolorbot I recognise that colour! That's the colour of the ");
-	    		opening.add(".@everycolorbot that's the colour of my favourite team the ");
+	    		opening.add("@everycolorbot I recognise that colour! That's the colour of the ");
+	    		opening.add("@everycolorbot that's the colour of my favourite team the ");
 	    		opening.add("I know that colour @everycolorbot that's the colour of the ");
+	    		
 	    		
 	    		Random generator  = new Random();
 	    		int random = generator.nextInt(opening.size());
 	    		
-	    		String tweet = opening.get(random) + parts[0] + " " + parts[1] + " a.k.a the " +parts[2].replace("_", " ")+".";
+	    		String tweet = opening.get(random) + parts[0] + " " + parts[1] + " a.k.a the " +parts[2].replace("_", " ")+" #"+parts[0].replace(" ", "")+" #"+parts[1].replace(" ", "");
+	    		
+	    		if(tweet.length() > 118){
+	    			 tweet = opening.get(random) + parts[0] + " " + parts[1] + " a.k.a the " +parts[2].replace("_", " ")+" #"+parts[0].replace(" ", "");
+	    		}
+	    		if(tweet.length() > 118){
+	    			tweet = opening.get(random) + parts[0] + " " + parts[1] + " a.k.a the " +parts[2].replace("_", " ");
+	    		}
 	    		return tweet;
 	    	}
 	    	
@@ -96,7 +104,6 @@ public class Tweeter {
 	    };
 
 	    twitterStream.addListener(listener);
-	    
 	    
 	    long everycolorbotId = 1909219404l;
 	    FilterQuery query = new FilterQuery();
